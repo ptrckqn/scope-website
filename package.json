@@ -4,6 +4,7 @@
   "description": "SCOPE - The Self-Compassion Online - Preventing Depression Trial",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Quan",
