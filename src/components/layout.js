@@ -45,7 +45,7 @@ body{
 
 const Container = styled.div`
   max-width: 100rem;
-  margin: 0 auto;
+  margin: 8rem auto 0;
   background-color: #fff;
 `;
 

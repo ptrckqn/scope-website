@@ -1,8 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const Container = styled.header`
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  z-index: 10;
+  max-width: 100rem;
   background-color: #7d8c8f;
   width: 100%;
   height: 8rem;
@@ -13,11 +18,11 @@ const Container = styled.header`
   @media only screen and (max-width: 56.25em) {
     padding: 0 3rem;
   }
-`
+`;
 
 const Logo = styled.span`
   font-weight: 300;
-`
+`;
 
 const Links = styled.ul`
   list-style: none;
@@ -26,17 +31,17 @@ const Links = styled.ul`
   grid-column-gap: 3rem;
   text-transform: uppercase;
   font-weight: 700;
-`
+`;
 
 const LinkContainer = styled.li`
   color: #fff;
   text-decoration: none;
-`
+`;
 
 const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-`
+`;
 
 const Header = () => {
   return (
@@ -57,7 +62,7 @@ const Header = () => {
         </LinkContainer>
       </Links>
     </Container>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
