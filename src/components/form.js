@@ -92,6 +92,8 @@ const Email = styled.svg`
 
 const TextInput = styled.textarea`
   width: 50%;
+  height: 4rem;
+  margin-bottom: 1.5rem;
   border: none;
   border-bottom: 1px solid #7d8c8f;
   font-size: 1.8rem;
@@ -100,6 +102,7 @@ const TextInput = styled.textarea`
   resize: none;
   :focus {
     width: 90%;
+    height: 30rem;
     outline: none;
     ::placeholder {
       opacity: 1;
@@ -130,6 +133,22 @@ const Label = styled.label`
   ${TextInput}:not(:placeholder-shown) ~ &,
   ${TextInput}:focus ~ & {
     transform: translate(0, 0) scale(0.5);
+  }
+`;
+
+const Submit = styled.span`
+  align-self: center;
+  width: auto;
+  border: 1px solid #8f8f8f;
+  color: #8f8f8f;
+  border-radius: 25px;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  &:focus,
+  &:active {
+    border: 1px solid #131418;
+    color: #131418;
   }
 `;
 
@@ -179,6 +198,7 @@ const Form = () => {
         <TextInput id="body" placeholder="&nbsp;" />
         <Label htmlFor="body">What would you like us to know?</Label>
       </InputWrapper>
+      <Submit>Send</Submit>
     </Container>
   );
 };
