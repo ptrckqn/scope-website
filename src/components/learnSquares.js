@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const Container = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ const Container = styled.section`
     position: relative;
     flex-direction: column;
   }
-`
+`;
 
 const Image = styled.div`
   background: url(${props => props.image}) center center/cover no-repeat;
@@ -21,7 +21,7 @@ const Image = styled.div`
     flex: auto;
     height: 70rem;
   }
-`
+`;
 
 const Details = styled.div`
   padding: 6rem;
@@ -33,19 +33,21 @@ const Details = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
   }
-`
+`;
 
 const Title = styled.h4`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 5rem;
-`
+  color: #131418;
+`;
 
 const Body = styled.p`
   font-size: 1.5rem;
   line-height: 3rem;
   margin-bottom: 2rem;
-`
+  color: #8f8f8f;
+`;
 
 const LearnBtn = styled(Link)`
   color: #000;
@@ -57,19 +59,19 @@ const LearnBtn = styled(Link)`
   border-radius: 3px;
   padding: 1.5rem;
   float: right;
-`
+`;
 
-const LearnSquares = ({ title, body, url, image, mirrored }) => {
+const LearnSquares = ({ title, url, image, mirrored, children }) => {
   return (
     <Container mirrored={mirrored}>
       <Image image={image} />
       <Details>
         <Title>{title}</Title>
-        <Body>{body}</Body>
+        <Body>{children}</Body>
         <LearnBtn to={url}>Learn More</LearnBtn>
       </Details>
     </Container>
-  )
-}
+  );
+};
 
-export default LearnSquares
+export default LearnSquares;

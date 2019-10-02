@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10rem 3rem;
   align-items: center;
-`
+`;
 
 const Icon = styled.span`
   position: relative;
@@ -22,24 +22,27 @@ const Icon = styled.span`
     transform: translate(-50%, -50%);
     width: 7rem;
   }
-`
+`;
 
 const Body = styled.p`
   text-align: center;
   margin-bottom: 3rem;
-`
+  color: #131418;
+`;
 
 const Author = styled.span`
   text-align: center;
   font-weight: 700;
-`
+  color: #8f8f8f;
+`;
 
 const Title = styled.span`
   text-align: center;
   font-style: oblique;
-`
+  color: #8f8f8f;
+`;
 
-const Quote = ({ author, body, title }) => {
+const Quote = ({ author, title, children }) => {
   return (
     <Container>
       <Icon>
@@ -56,11 +59,11 @@ const Quote = ({ author, body, title }) => {
           />
         </svg>
       </Icon>
-      <Body>{body}</Body>
+      <Body>{children}</Body>
       <Author>{author}</Author>
       <Title>{title}</Title>
     </Container>
-  )
-}
+  );
+};
 
-export default Quote
+export default Quote;

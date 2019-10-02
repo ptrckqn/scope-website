@@ -1,12 +1,14 @@
-import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
-import { Helmet } from "react-helmet"
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
-import Header from "./header"
+import Header from "./header";
 
 /*
   Background: #7d8c8f;
   Background Secondary: #3e4246;
+  Text: #131418;
+  Alt Text: #8f8f8f;
 
 */
 const GlobalStyle = createGlobalStyle`
@@ -39,13 +41,13 @@ body{
       padding: 0;
   }
 }
-`
+`;
 
 const Container = styled.div`
   max-width: 100rem;
   margin: 0 auto;
   background-color: #fff;
-`
+`;
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -58,7 +60,7 @@ const Layout = ({ pageTitle, children }) => {
       <Header />
       {children}
     </Container>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
