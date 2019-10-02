@@ -3,11 +3,10 @@ import styled from "styled-components";
 
 const Container = styled.div``;
 
-const Title = styled.h3`
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 3rem;
+const Title = styled.h4`
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
   color: #131418;
 `;
 
