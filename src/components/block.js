@@ -4,9 +4,8 @@ import styled from "styled-components";
 const Container = styled.div``;
 
 const Title = styled.h4`
-  text-transform: uppercase;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: #131418;
 `;
 

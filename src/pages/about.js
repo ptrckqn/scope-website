@@ -30,6 +30,12 @@ const AboutPage = () => (
         meditator, then that’s fine too. Whatever works best for you, we will be
         there for you.
       </Details>
+      <Details>
+        While researching some popular static site generation tools, I came
+        across NextJS. It is developed and maintained by the Zeit team and
+        provided a full featured static site generation solution. Just what I
+        was looking for. The one tiny issue was that it leveraged React.
+      </Details>
       <Details title="Design For Independence, Not Dependence">
         We believe that the ultimate purpose of a meditation app is to help
         someone no longer need a meditation app. Buddhify is designed with the
