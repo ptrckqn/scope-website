@@ -16,7 +16,7 @@ const Input = styled.input`
   width: 100%;
   height: 100%;
   border: 1px solid #8f8f8f;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 1.5rem;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -56,18 +56,25 @@ const RadioLabel = styled.label`
   justify-items: center;
   border: 1px solid #8f8f8f;
   transition: all 0.3s;
+  cursor: pointer;
   ${RadioInput}:checked + & {
-    border: 1px solid #131418;
-    background-color: #131418;
+    border: 1px solid #7d8c8f;
+    background-color: #7d8c8f;
     color: #fff;
   }
   :nth-child(2) {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   :nth-child(4) {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  &:focus,
+  &:hover {
+    border: 1px solid #8f8f8f;
+    background-color: #8f8f8f;
+    color: #fff;
   }
 `;
 
@@ -75,7 +82,7 @@ const TextInput = styled.textarea`
   width: 100%;
   height: 5.5rem;
   border: 1px solid #8f8f8f;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 1.5rem;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -122,14 +129,21 @@ const Submit = styled.span`
   width: auto;
   border: 1px solid #8f8f8f;
   color: #8f8f8f;
-  border-radius: 25px;
+  border-radius: 3px;
   padding: 1rem 3rem;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  cursor: pointer;
+  transition: all 0.2s;
   &:focus,
+  &:hover {
+    border: 1px solid #8f8f8f;
+    background-color: #8f8f8f;
+    color: #fff;
+  }
   &:active {
-    border: 1px solid #131418;
-    color: #131418;
+    border: 1px solid #7d8c8f;
+    background-color: #7d8c8f;
+    color: #fff;
   }
 `;
 
