@@ -7,6 +7,12 @@ const Container = styled.form`
   width: 100%;
 `;
 
+const Title = styled.h4`
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #131418;
+`;
+
 const InputWrapper = styled.span`
   display: flex;
   flex-direction: column-reverse;
@@ -148,18 +154,55 @@ const Submit = styled.span`
 `;
 
 const Form = () => {
+  // TODO: MAKE FORM WORK
+  const [details, setDetails] = useState({
+    name: "",
+    email: "",
+    number: "",
+    preferredContact: "",
+    body: ""
+  });
+
+  function handleChange(e) {
+    setDetails({ ...details, [e.target.name]: e.target.value });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(details);
+  }
+
   return (
     <Container>
+      <Title>Contact Form</Title>
       <InputWrapper>
-        <Input id="name" type="text" placeholder="Enter your name" />
+        <Input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          value={details.name}
+          onChange={handleChange}
+        />
         <Label htmlFor="name">What's your name?</Label>
       </InputWrapper>
       <InputWrapper>
-        <Input id="email" type="email" placeholder="Enter your email" />
+        <Input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          value={details.email}
+          onChange={handleChange}
+        />
         <Label htmlFor="email">What's your email?</Label>
       </InputWrapper>
       <InputWrapper>
-        <Input id="number" type="text" placeholder="Enter your number" />
+        <Input
+          id="number"
+          type="text"
+          placeholder="Enter your number"
+          value={details.number}
+          onChange={handleChange}
+        />
         <Label htmlFor="number">What's your number?</Label>
       </InputWrapper>
       <AltLabel>How would you like to be contacted?</AltLabel>
@@ -180,10 +223,15 @@ const Form = () => {
         <RadioLabel htmlFor="phoneRadio">Phone</RadioLabel>
       </RadioWrapper>
       <InputWrapper>
-        <TextInput id="body" placeholder="&nbsp;" />
+        <TextInput
+          id="body"
+          placeholder="&nbsp;"
+          value={details.body}
+          onChange={handleChange}
+        />
         <Label htmlFor="body">What would you like us to know?</Label>
       </InputWrapper>
-      <Submit>Send</Submit>
+      <Submit onClick={handleSubmit}>Send</Submit>
     </Container>
   );
 };
