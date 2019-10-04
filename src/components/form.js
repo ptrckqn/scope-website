@@ -37,12 +37,18 @@ const Input = styled.input`
   &::placeholder {
     opacity: 0;
   }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const AltLabel = styled.label`
   font-size: 2.4rem;
   padding: 1rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
 `;
 
 const RadioWrapper = styled.div`
@@ -63,6 +69,7 @@ const RadioLabel = styled.label`
   border: 1px solid #8f8f8f;
   transition: all 0.3s;
   cursor: pointer;
+  color: #7d8c8f;
   ${RadioInput}:checked + & {
     border: 1px solid #7d8c8f;
     background-color: #7d8c8f;
@@ -108,25 +115,32 @@ const TextInput = styled.textarea`
 `;
 
 const Label = styled.label`
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 0.3s;
   transform-origin: left bottom;
   color: #8f8f8f;
   ${Input}:placeholder-shown ~ & {
     transform: translate(1.5rem, 4.35rem) scale(1);
     cursor: text;
+    @media only screen and (max-width: 56.25em) {
+          transform: translate(1.5rem, 3.9rem) scale(1);
+    }
   }
   ${Input}:not(:placeholder-shown) ~ &,
   ${Input}:focus ~ & {
-    transform: translate(0, 0) scale(0.5);
+    transform: translate(0, 0) scale(0.75);
+
   }
   ${TextInput}:placeholder-shown ~ & {
     transform: translate(1.5rem, 4.35rem) scale(1);
     cursor: text;
+    @media only screen and (max-width: 56.25em) {
+          transform: translate(1.5rem, 4.1rem) scale(1);
+    }
   }
   ${TextInput}:not(:placeholder-shown) ~ &,
   ${TextInput}:focus ~ & {
-    transform: translate(0, 0) scale(0.5);
+    transform: translate(0, 0) scale(0.75);
   }
 `;
 

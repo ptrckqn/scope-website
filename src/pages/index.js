@@ -33,6 +33,11 @@ const IndexPage = () => (
       title="Scope"
       subtitle="The Self-Compassion Online - Preventing Depression Trial"
       image="https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1911&q=80"
+      altImages={[
+        "https://images.unsplash.com/photo-1435820876491-c2cb37e8e7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2845&q=80",
+        "https://images.unsplash.com/photo-1470399542183-e6245d78c479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80",
+        "https://images.unsplash.com/photo-1507629221898-576a56b530bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+      ]}
     />
     <QuoteSpan>
       "Quote about the self-compassion intervention" - Dr. Shadi Beshai

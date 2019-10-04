@@ -10,8 +10,13 @@ import Footer from "../components/footer";
 const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
   padding: 3rem;
   justify-items: center;
+  @media only screen and (max-width: 39em) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10rem;
+  }
 `;
 
 const ContactPage = () => (

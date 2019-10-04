@@ -8,6 +8,12 @@ import Details from "../components/details";
 
 const Container = styled.section`
   padding: 5rem;
+  @media only screen and (max-width: 39em) {
+    padding: 5rem 3rem;
+  }
+  @media only screen and (max-width: 30em) {
+    padding: 5rem 1rem;
+  }
 `;
 
 const AboutPage = () => (
