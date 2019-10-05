@@ -118,7 +118,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Header = () => {
+const Nav = () => {
   return (
     <Container>
       <Logo>(LOGO)</Logo>
@@ -144,4 +144,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;

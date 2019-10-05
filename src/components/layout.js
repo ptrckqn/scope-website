@@ -2,7 +2,7 @@ import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
 
-import Header from "./header";
+import Nav from "./nav";
 
 /*
   Background: #7d8c8f;
@@ -57,7 +57,7 @@ const Layout = ({ pageTitle, children }) => {
         <title>SCOPE - {pageTitle}</title>
       </Helmet>
       <GlobalStyle />
-      <Header />
+      <Nav />
       {children}
     </Container>
   );
