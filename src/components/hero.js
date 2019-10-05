@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Container = styled.section`
@@ -6,6 +6,20 @@ const Container = styled.section`
   width: 100%;
   height: 55vh;
   transition: all 0.3s;
+  background: url(${props => props.image}) center center/cover no-repeat;
+  overflow: hidden;
+`;
+
+const BackgroundImage = styled.div`
+  position: absolute;
+  width: 101%;
+  height: 55.2vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  opacity: ${props => (props.id === props.index ? "1" : "0")};
+  visibility: ${props => (props.id === props.index ? "visible" : "hidden")};
   background: url(${props => props.image}) center center/cover no-repeat;
 `;
 
@@ -40,8 +54,25 @@ const Subtitle = styled.h2`
 `;
 
 const Hero = ({ title, subtitle, image, altImages }) => {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (altImages) {
+      const interval = setInterval(
+        () => setIndex(index => (index + 1) % altImages.length),
+        10000
+      );
+      return () => clearInterval(interval);
+    }
+    return;
+  }, []);
+
   return (
-    <Container image={image}>
+    <Container image={altImages ? null : image}>
+      {altImages
+        ? altImages.map((image, i) => (
+            <BackgroundImage key={i} image={image} id={i} index={index} />
+          ))
+        : null}
       <Details>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
