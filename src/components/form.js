@@ -172,7 +172,7 @@ const Form = () => {
   const [details, setDetails] = useState({
     name: "",
     email: "",
-    number: "",
+    phone: "",
     preferredContact: "",
     body: ""
   });
@@ -183,7 +183,21 @@ const Form = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(details);
+    fetch("https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(details)
+    });
+    setDetails({
+      name: "",
+      email: "",
+      phone: "",
+      preferredContact: "",
+      body: ""
+    });
   }
 
   return (
@@ -191,30 +205,35 @@ const Form = () => {
       <Title>Contact Form</Title>
       <InputWrapper>
         <Input
+          name="name"
           id="name"
           type="text"
           placeholder="Enter your name"
           value={details.name}
           onChange={handleChange}
+          required
         />
         <Label htmlFor="name">What's your name?</Label>
       </InputWrapper>
       <InputWrapper>
         <Input
+          name="email"
           id="email"
           type="email"
           placeholder="Enter your email"
           value={details.email}
           onChange={handleChange}
+          required
         />
         <Label htmlFor="email">What's your email?</Label>
       </InputWrapper>
       <InputWrapper>
         <Input
-          id="number"
+          name="phone"
+          id="phone"
           type="text"
-          placeholder="Enter your number"
-          value={details.number}
+          placeholder="Enter your phone number"
+          value={details.phone}
           onChange={handleChange}
         />
         <Label htmlFor="number">What's your number?</Label>
@@ -226,6 +245,8 @@ const Form = () => {
           name="contactMethod"
           id="emailRadio"
           value="email"
+          onChange={() => setDetails({ ...details, preferredContact: "email" })}
+          required
         />
         <RadioLabel htmlFor="emailRadio">Email</RadioLabel>
         <RadioInput
@@ -233,11 +254,13 @@ const Form = () => {
           name="contactMethod"
           id="phoneRadio"
           value="phone"
+          onChange={() => setDetails({ ...details, preferredContact: "phone" })}
         />
         <RadioLabel htmlFor="phoneRadio">Phone</RadioLabel>
       </RadioWrapper>
       <InputWrapper>
         <TextInput
+          name="body"
           id="body"
           placeholder="&nbsp;"
           value={details.body}
