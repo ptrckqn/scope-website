@@ -7,6 +7,12 @@ const Container = styled.form`
   width: 100%;
 `;
 
+const Success = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 const Title = styled.h4`
   font-weight: 700;
   font-size: 2.5rem;
@@ -168,7 +174,6 @@ const Submit = styled.span`
 `;
 
 const Form = () => {
-  // TODO: MAKE FORM WORK
   const [details, setDetails] = useState({
     name: "",
     email: "",
@@ -176,21 +181,27 @@ const Form = () => {
     preferredContact: "",
     body: ""
   });
+  const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState();
 
   function handleChange(e) {
     setDetails({ ...details, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    fetch("https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev", {
+    // https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev Development
+
+    // https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev Production
+    await fetch("https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
       },
       body: JSON.stringify(details)
-    });
+    }).then(res => setStatus(res.status));
+    setSending(true);
     setDetails({
       name: "",
       email: "",
@@ -201,6 +212,9 @@ const Form = () => {
   }
 
   return (
+    {
+      status === 200 ? <Success>Thank you for your interest, we'll contact you shortly.</Success> :
+
     <Container>
       <Title>Contact Form</Title>
       <InputWrapper>
@@ -236,7 +250,7 @@ const Form = () => {
           value={details.phone}
           onChange={handleChange}
         />
-        <Label htmlFor="number">What's your number?</Label>
+        <Label htmlFor="phone">What's your number?</Label>
       </InputWrapper>
       <AltLabel>How would you like to be contacted?</AltLabel>
       <RadioWrapper>
@@ -268,8 +282,9 @@ const Form = () => {
         />
         <Label htmlFor="body">What would you like us to know?</Label>
       </InputWrapper>
-      <Submit onClick={handleSubmit}>Send</Submit>
+      <Submit onClick={handleSubmit}>{sending ? "Sending..." : "Send"}</Submit>
     </Container>
+  }
   );
 };
 
