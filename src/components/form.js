@@ -11,7 +11,7 @@ const Success = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const Title = styled.h4`
   font-weight: 700;
@@ -212,9 +212,6 @@ const Form = () => {
   }
 
   return (
-    {
-      status === 200 ? <Success>Thank you for your interest, we'll contact you shortly.</Success> :
-
     <Container>
       <Title>Contact Form</Title>
       <InputWrapper>
@@ -284,7 +281,6 @@ const Form = () => {
       </InputWrapper>
       <Submit onClick={handleSubmit}>{sending ? "Sending..." : "Send"}</Submit>
     </Container>
-  }
   );
 };
 
