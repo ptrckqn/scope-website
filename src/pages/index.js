@@ -32,27 +32,31 @@ const Quotes = styled.section`
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query indexPageQuery {
-      markdownRemark {
+      markdownRemark(fileRelativePath: { eq: "/src/page-data/index.md" }) {
         ...TinaRemark
+        id
         frontmatter {
-          title
-          subtitle
           mainQuote
-          squares {
-            title
-            body
-          }
           quotes {
-            body
-            sub
             author
+            sub
+            body
           }
+          squares {
+            body
+            title
+          }
+          subtitle
+          title
         }
       }
     }
   `);
 
-  const [{ frontmatter }] = useLocalRemarkForm(data.markdownRemark);
+  const [{ frontmatter }] = useLocalRemarkForm(
+    data.markdownRemark,
+    IndexPageForm
+  );
 
   return (
     <Layout pageTitle="Welcome">
@@ -97,3 +101,63 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+const IndexPageForm = {
+  label: "Home Page",
+  fields: [
+    {
+      label: "Title",
+      name: "rawFrontmatter.title",
+      component: "text"
+    },
+    {
+      label: "Subtitle",
+      name: "rawFrontmatter.subtitle",
+      component: "text"
+    },
+    {
+      label: "Quote",
+      name: "rawFrontmatter.mainQuote",
+      component: "text"
+    },
+    {
+      label: "Squares Content",
+      name: "rawFrontmatter.squares",
+      component: "group-list",
+      fields: [
+        {
+          label: "Heading",
+          name: "title",
+          component: "text"
+        },
+        {
+          label: "Body",
+          name: "body",
+          component: "textarea"
+        }
+      ]
+    },
+    {
+      label: "Quotes List",
+      name: "rawFrontmatter.quotes",
+      component: "group-list",
+      fields: [
+        {
+          label: "Quotes",
+          name: "body",
+          component: "textarea"
+        },
+        {
+          label: "Author",
+          name: "author",
+          component: "text"
+        },
+        {
+          label: "Title",
+          name: "sub",
+          component: "text"
+        }
+      ]
+    }
+  ]
+};
