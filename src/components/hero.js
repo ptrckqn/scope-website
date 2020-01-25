@@ -17,7 +17,7 @@ const BackgroundImage = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.3s;
+  transition: all 0.7s;
   opacity: ${props => (props.id === props.index ? "1" : "0")};
   visibility: ${props => (props.id === props.index ? "visible" : "hidden")};
   background: url(${props => props.image}) center center/cover no-repeat;

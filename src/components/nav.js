@@ -113,9 +113,40 @@ const LinkContainer = styled.li`
   text-decoration: none;
 `;
 
+const DropdownContainer = styled.span`
+  cursor: pointer;
+  position: relative;
+`;
+
+const DropdownContent = styled.span`
+  margin-top: 25px;
+  position: absolute;
+  background-color: #3e4246;
+  left: 0;
+  top: 0;
+  transform: translateX(-35%);
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 10px;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  a {
+    padding: 15px 0;
+  }
+  ${DropdownContainer}:hover &,  &:hover {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+  }
+`;
+
 const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 `;
 
 const Nav = () => {
@@ -130,9 +161,13 @@ const Nav = () => {
         <LinkContainer>
           <NavLink to="/">Home</NavLink>
         </LinkContainer>
-        <LinkContainer>
+        <DropdownContainer>
           <NavLink to="/about">About</NavLink>
-        </LinkContainer>
+          <DropdownContent>
+            <NavLink to="/self-compassion">Self-Compassion</NavLink>
+            <NavLink to="/depression">Depression</NavLink>
+          </DropdownContent>
+        </DropdownContainer>
         <LinkContainer>
           <NavLink to="/resources">Resources</NavLink>
         </LinkContainer>

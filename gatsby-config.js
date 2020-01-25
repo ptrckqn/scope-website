@@ -14,6 +14,13 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/page-data`
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -26,6 +33,16 @@ module.exports = {
         background_color: "#7d8c8f",
         theme_color: "#3e4246",
         display: "standalone"
+      }
+    },
+    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-plugin-tinacms",
+      options: {
+        sidebar: {
+          hidden: process.env.NODE_ENV === "production"
+        },
+        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"]
       }
     }
   ]

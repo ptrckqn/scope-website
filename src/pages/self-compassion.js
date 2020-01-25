@@ -16,10 +16,10 @@ const Container = styled.section`
   }
 `;
 
-const AboutPage = () => (
-  <Layout pageTitle="About">
+const SelfCompassionPage = () => (
+  <Layout pageTitle="Self Compassion">
     <Hero
-      title="About Us"
+      title="Self Compassion"
       subtitle="Who We Are"
       image="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
     />
@@ -58,4 +58,4 @@ const AboutPage = () => (
   </Layout>
 );
 
-export default AboutPage;
+export default SelfCompassionPage;
