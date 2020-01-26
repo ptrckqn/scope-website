@@ -73,7 +73,6 @@ const Hero = ({ title, subtitle, images }) => {
             <Img fluid={image} />
           </BackgroundWrapper>
         ))}
-      {console.log(images)}
       <Details>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
