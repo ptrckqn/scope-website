@@ -34,7 +34,7 @@ const IndexPage = ({
   }
 }) => {
   const images = frontmatter.backgrounds.map(
-    image => image.childImageSharp.fluid
+    ({ src }) => src.childImageSharp.fluid
   );
 
   return (
@@ -96,9 +96,11 @@ export const pageQuery = graphql`
         subtitle
         title
         backgrounds {
-          childImageSharp {
-            fluid(quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
+          src {
+            childImageSharp {
+              fluid(quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
             }
           }
         }

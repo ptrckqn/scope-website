@@ -42,7 +42,7 @@ const ContactPage = ({
   }
 }) => {
   const images = frontmatter.backgrounds.map(
-    image => image.childImageSharp.fluid
+    ({ src }) => src.childImageSharp.fluid
   );
   return (
     <Layout pageTitle={frontmatter.title}>
@@ -68,9 +68,11 @@ export const pageQuery = graphql`
         title
         subtitle
         backgrounds {
-          childImageSharp {
-            fluid(quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
+          src {
+            childImageSharp {
+              fluid(quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
             }
           }
         }

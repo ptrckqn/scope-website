@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images
+public_folder: images
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - file: src/pages/about.md
+        label: About Page
+        name: about
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+          - label: Background Images
+            name: backgrounds
+            widget: list
+            field:
+              - label: Image
+                name: src
+                widget: image
+          - label: Body
+            name: body
+            widget: markdown

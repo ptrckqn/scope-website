@@ -2,7 +2,7 @@
 title: Am I Eligible
 subtitle: idk are you?
 backgrounds:
-  - /images/photo-8.png
+  - src: /images/photo-8.png
 ---
 
 # Choose Your Own Adventure

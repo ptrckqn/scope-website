@@ -2,7 +2,7 @@
 title: Project
 subtitle: Luna was here
 backgrounds:
-  - /images/photo-8.png
+  - src: /images/photo-8.png
 ---
 
 # Choose Your Own Adventure
