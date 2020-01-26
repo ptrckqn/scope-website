@@ -26,5 +26,4 @@ quotes:
   - body: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     sub: Lorem ipsum dolor sit amet
     author: Dr. Lorem Ipsum
-interested: Are you interested?
 ---
