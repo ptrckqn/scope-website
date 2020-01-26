@@ -1,6 +1,8 @@
 ---
 title: Resources
-subtitle: asdf
+subtitle: Lokki too
+backgrounds:
+  - /images/photo-8.png
 ---
 
 # Choose Your Own Adventure

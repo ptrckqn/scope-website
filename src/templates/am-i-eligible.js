@@ -20,18 +20,23 @@ const AmIEligiblePage = ({
   data: {
     markdownRemark: { frontmatter, html }
   }
-}) => (
-  <Layout pageTitle={frontmatter.title}>
-    <Hero
-      title={frontmatter.title}
-      subtitle={frontmatter.subtitle}
-      image="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-    />
-    <Container>
-      <Details data={html} />
-    </Container>
-  </Layout>
-);
+}) => {
+  const images = frontmatter.backgrounds.map(
+    image => image.childImageSharp.fluid
+  );
+  return (
+    <Layout pageTitle={frontmatter.title}>
+      <Hero
+        title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
+        images={images}
+      />
+      <Container>
+        <Details data={html} />
+      </Container>
+    </Layout>
+  );
+};
 
 export default AmIEligiblePage;
 
@@ -41,6 +46,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        backgrounds {
+          childImageSharp {
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
       html
     }

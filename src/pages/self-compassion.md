@@ -1,6 +1,8 @@
 ---
 title: Self Compassion
 subtitle: ¯\_(ツ)_/¯
+backgrounds:
+  - /images/photo-8.png
 ---
 
 # Choose Your Own Adventure

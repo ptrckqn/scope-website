@@ -1,6 +1,8 @@
 ---
 title: About Us
 subtitle: Who We Are
+backgrounds:
+  - /images/photo-8.png
 ---
 
 # Choose Your Own Adventure

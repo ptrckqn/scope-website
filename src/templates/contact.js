@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import styled from "styled-components";
 
 import Layout from "../components/layout";
@@ -39,19 +40,24 @@ const ContactPage = ({
   data: {
     markdownRemark: { frontmatter, html }
   }
-}) => (
-  <Layout pageTitle={frontmatter.title}>
-    <Hero
-      title={frontmatter.title}
-      subtitle={frontmatter.subtitle}
-      image="https://images.unsplash.com/photo-1490100667990-4fced8021649?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2704&q=80"
-    />
-    <Container>
-      <Form />
-      <MarkdownData dangerouslySetInnerHTML={{ __html: html }} />
-    </Container>
-  </Layout>
-);
+}) => {
+  const images = frontmatter.backgrounds.map(
+    image => image.childImageSharp.fluid
+  );
+  return (
+    <Layout pageTitle={frontmatter.title}>
+      <Hero
+        title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
+        images={images}
+      />
+      <Container>
+        <Form />
+        <MarkdownData dangerouslySetInnerHTML={{ __html: html }} />
+      </Container>
+    </Layout>
+  );
+};
 
 export default ContactPage;
 
@@ -61,6 +67,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        backgrounds {
+          childImageSharp {
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
       html
     }

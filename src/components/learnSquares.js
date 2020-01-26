@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 const Container = styled.section`
   width: 100%;
   height: 50%;
   display: flex;
   flex-direction: ${props => (props.mirrored ? `row-reverse` : `row`)};
+  align-items: center;
   @media only screen and (max-width: 39em) {
     position: relative;
     flex-direction: column;
   }
 `;
 
-const Image = styled.div`
-  background: url(${props => props.image}) center center/cover no-repeat;
+const Image = styled(Img)`
   width: 100%;
   flex: 0 0 50%;
   @media only screen and (max-width: 39em) {
@@ -32,6 +33,7 @@ const Details = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
   }
 `;
 
@@ -64,12 +66,12 @@ const LearnBtn = styled(Link)`
 const LearnSquares = ({ title, url, image, mirrored, children }) => {
   return (
     <Container mirrored={mirrored}>
-      <Image image={image} />
       <Details>
         <Title>{title}</Title>
         <Body>{children}</Body>
         <LearnBtn to={url}>Learn More</LearnBtn>
       </Details>
+      <Image fluid={image} />
     </Container>
   );
 };

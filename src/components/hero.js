@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 const Container = styled.section`
   position: relative;
   width: 100%;
   height: 55vh;
   transition: all 0.3s;
-  background: url(${props => props.image}) center center/cover no-repeat;
   overflow: hidden;
 `;
 
-const BackgroundImage = styled.div`
+const BackgroundWrapper = styled.div`
   position: absolute;
   width: 101%;
   height: 55.2vh;
@@ -20,7 +20,6 @@ const BackgroundImage = styled.div`
   transition: all 0.7s;
   opacity: ${props => (props.id === props.index ? "1" : "0")};
   visibility: ${props => (props.id === props.index ? "visible" : "hidden")};
-  background: url(${props => props.image}) center center/cover no-repeat;
 `;
 
 const Details = styled.div`
@@ -53,12 +52,12 @@ const Subtitle = styled.h2`
   }
 `;
 
-const Hero = ({ title, subtitle, image, altImages }) => {
+const Hero = ({ title, subtitle, images }) => {
   const [index, setIndex] = useState(0);
   useEffect(() => {
-    if (altImages) {
+    if (images.length > 1) {
       const interval = setInterval(
-        () => setIndex(index => (index + 1) % altImages.length),
+        () => setIndex(index => (index + 1) % images.length),
         10000
       );
       return () => clearInterval(interval);
@@ -67,12 +66,14 @@ const Hero = ({ title, subtitle, image, altImages }) => {
   }, []);
 
   return (
-    <Container image={altImages ? null : image}>
-      {altImages
-        ? altImages.map((image, i) => (
-            <BackgroundImage key={i} image={image} id={i} index={index} />
-          ))
-        : null}
+    <Container>
+      {images &&
+        images.map((image, i) => (
+          <BackgroundWrapper key={i} id={i} index={index}>
+            <Img fluid={image} />
+          </BackgroundWrapper>
+        ))}
+      {console.log(images)}
       <Details>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>

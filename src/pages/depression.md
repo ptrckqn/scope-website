@@ -1,7 +1,8 @@
 ---
 title: Depression
 subtitle: :(
-mainQuote:
+backgrounds:
+  - /images/photo-8.png
 ---
 
 # Choose Your Own Adventure

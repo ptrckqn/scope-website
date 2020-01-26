@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   plugins: [
     {
@@ -13,15 +11,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/pages`
+        name: `images`,
+        path: `${__dirname}/static/images`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`)
+        name: `data`,
+        path: `${__dirname}/src/pages`
       }
     },
     `gatsby-plugin-sharp`,
@@ -40,6 +38,24 @@ module.exports = {
         display: "standalone"
       }
     },
-    "gatsby-transformer-remark"
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1000
+            }
+          }
+        ]
+      }
+    }
   ]
 };

@@ -33,34 +33,29 @@ const IndexPage = ({
     markdownRemark: { frontmatter }
   }
 }) => {
+  const images = frontmatter.backgrounds.map(
+    image => image.childImageSharp.fluid
+  );
+
   return (
     <Layout pageTitle="Welcome">
       <Hero
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        image="https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1911&q=80"
-        altImages={[
-          "https://images.unsplash.com/photo-1435820876491-c2cb37e8e7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2845&q=80",
-          "https://images.unsplash.com/photo-1470399542183-e6245d78c479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80",
-          "https://images.unsplash.com/photo-1507629221898-576a56b530bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-        ]}
+        images={images}
       />
       <QuoteSpan>{frontmatter.mainQuote}</QuoteSpan>
-      <LearnSquares
-        title={frontmatter.squares[0].title}
-        url="/project"
-        image="https://images.unsplash.com/photo-1553548146-50f0bdf09f0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
-      >
-        {frontmatter.squares[0].body}
-      </LearnSquares>
-      <LearnSquares
-        title={frontmatter.squares[1].title}
-        url="/am-i-eligible"
-        image="https://images.unsplash.com/photo-1553628864-9149ead2585b?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-        mirrored
-      >
-        {frontmatter.squares[1].body}
-      </LearnSquares>
+      {frontmatter.squares &&
+        frontmatter.squares.map(({ title, body, image, url }, count) => (
+          <LearnSquares
+            title={title}
+            url={url}
+            image={image.childImageSharp.fluid}
+            mirrored={count % 2 === 0}
+          >
+            {body}
+          </LearnSquares>
+        ))}
       <Quotes>
         {frontmatter.quotes &&
           frontmatter.quotes.map(({ body, sub, author }) => (
@@ -89,9 +84,24 @@ export const pageQuery = graphql`
         squares {
           body
           title
+          url
+          image {
+            childImageSharp {
+              fluid(quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
+            }
+          }
         }
         subtitle
         title
+        backgrounds {
+          childImageSharp {
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
     }
   }

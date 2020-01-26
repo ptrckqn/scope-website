@@ -1,6 +1,8 @@
 ---
 title: Contact Us
 subtitle: Let's talk
+backgrounds:
+  - /images/photo-8.png
 ---
 
 # Contact Information
