@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   plugins: [
     {
@@ -12,9 +14,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/page-data`
+        path: `${__dirname}/src/pages`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`)
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -29,15 +40,6 @@ module.exports = {
         display: "standalone"
       }
     },
-    "gatsby-transformer-remark",
-    {
-      resolve: "gatsby-plugin-tinacms",
-      options: {
-        sidebar: {
-          hidden: process.env.NODE_ENV === "production"
-        },
-        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"]
-      }
-    }
+    "gatsby-transformer-remark"
   ]
 };

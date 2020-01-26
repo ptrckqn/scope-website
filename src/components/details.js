@@ -11,20 +11,26 @@ const Container = styled.div`
   }
 `;
 
-const Title = styled.h4`
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #131418;
-`;
-
-const Body = styled.p`
+const MarkdownData = styled.div`
   color: #8f8f8f;
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #131418;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #131418;
+  }
+  p {
+    padding: 1.5rem 0;
+  }
 `;
 
-const Details = ({ title, children }) => (
+const Details = ({ data }) => (
   <Container>
-    <Title>{title}</Title>
-    <Body>{children}</Body>
+    <MarkdownData dangerouslySetInnerHTML={{ __html: data }} />
   </Container>
 );
 

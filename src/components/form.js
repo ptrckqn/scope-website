@@ -25,6 +25,7 @@ const InputWrapper = styled.span`
 `;
 
 const Input = styled.input`
+  font-family: "Montserrat";
   width: 100%;
   height: 100%;
   border: 1px solid #8f8f8f;
@@ -33,15 +34,13 @@ const Input = styled.input`
   font-size: 1.8rem;
   transition: all 0.3s;
   color: #131418;
+  margin: 1.5rem auto;
   :focus {
     outline: none;
     border: 1px solid #131418;
-    ::placeholder {
-      opacity: 1;
-    }
   }
   &::placeholder {
-    opacity: 0;
+    font-family: "Montserrat";
   }
   @media only screen and (max-width: 56.25em) {
     font-size: 1.6rem;
@@ -58,7 +57,7 @@ const AltLabel = styled.label`
 `;
 
 const RadioWrapper = styled.div`
-  margin: 1.5rem auto;
+  margin: 0 auto 1.5rem;
   justify-content: center;
   display: flex;
 `;
@@ -98,6 +97,7 @@ const RadioLabel = styled.label`
 `;
 
 const TextInput = styled.textarea`
+  font-family: "Montserrat";
   width: 100%;
   height: 5.5rem;
   border: 1px solid #8f8f8f;
@@ -111,42 +111,9 @@ const TextInput = styled.textarea`
   :focus {
     outline: none;
     height: 20rem;
-    ::placeholder {
-      opacity: 1;
-    }
   }
   &::placeholder {
-    opacity: 0;
-  }
-`;
-
-const Label = styled.label`
-  font-size: 1.8rem;
-  transition: all 0.3s;
-  transform-origin: left bottom;
-  color: #8f8f8f;
-  ${Input}:placeholder-shown ~ & {
-    transform: translate(1.5rem, 4.35rem) scale(1);
-    cursor: text;
-    @media only screen and (max-width: 56.25em) {
-          transform: translate(1.5rem, 3.9rem) scale(1);
-    }
-  }
-  ${Input}:not(:placeholder-shown) ~ &,
-  ${Input}:focus ~ & {
-    transform: translate(0, 0) scale(0.75);
-
-  }
-  ${TextInput}:placeholder-shown ~ & {
-    transform: translate(1.5rem, 4.35rem) scale(1);
-    cursor: text;
-    @media only screen and (max-width: 56.25em) {
-          transform: translate(1.5rem, 4.1rem) scale(1);
-    }
-  }
-  ${TextInput}:not(:placeholder-shown) ~ &,
-  ${TextInput}:focus ~ & {
-    transform: translate(0, 0) scale(0.75);
+    font-family: "Montserrat";
   }
 `;
 
@@ -219,35 +186,32 @@ const Form = () => {
           name="name"
           id="name"
           type="text"
-          placeholder="Enter your name"
+          placeholder="What's your name?"
           value={details.name}
           onChange={handleChange}
           required
         />
-        <Label htmlFor="name">What's your name?</Label>
       </InputWrapper>
       <InputWrapper>
         <Input
           name="email"
           id="email"
           type="email"
-          placeholder="Enter your email"
+          placeholder="What's your email?"
           value={details.email}
           onChange={handleChange}
           required
         />
-        <Label htmlFor="email">What's your email?</Label>
       </InputWrapper>
       <InputWrapper>
         <Input
           name="phone"
           id="phone"
           type="text"
-          placeholder="Enter your phone number"
+          placeholder="What's your phone number?"
           value={details.phone}
           onChange={handleChange}
         />
-        <Label htmlFor="phone">What's your number?</Label>
       </InputWrapper>
       <AltLabel>How would you like to be contacted?</AltLabel>
       <RadioWrapper>
@@ -273,11 +237,10 @@ const Form = () => {
         <TextInput
           name="body"
           id="body"
-          placeholder="&nbsp;"
+          placeholder="What would you like us to know?"
           value={details.body}
           onChange={handleChange}
         />
-        <Label htmlFor="body">What would you like us to know?</Label>
       </InputWrapper>
       <Submit onClick={handleSubmit}>{sending ? "Sending..." : "Send"}</Submit>
     </Container>

@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
 
 import Nav from "./nav";
+import Footer from "./footer";
 
 /*
   Background: #7d8c8f;
@@ -59,6 +60,7 @@ const Layout = ({ pageTitle, children }) => {
       <GlobalStyle />
       <Nav />
       {children}
+      <Footer />
     </Container>
   );
 };

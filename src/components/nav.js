@@ -111,31 +111,45 @@ const Links = styled.ul`
 const LinkContainer = styled.li`
   color: #fff;
   text-decoration: none;
+  z-index: 2;
+  display: ${props => (props.mobile ? "none" : "list-item")};
+  @media only screen and (max-width: 39em) {
+    display: list-item;
+  }
 `;
 
 const DropdownContainer = styled.span`
   cursor: pointer;
   position: relative;
+  @media only screen and (max-width: 39em) {
+    display: none;
+  }
 `;
 
 const DropdownContent = styled.span`
-  margin-top: 25px;
   position: absolute;
-  background-color: #3e4246;
   left: 0;
   top: 0;
   transform: translateX(-35%);
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  padding: 10px;
-  border-radius: 3px;
-  pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-  a {
-    padding: 15px 0;
+  pointer-events: none;
+  z-index: 1;
+  margin-top: 20px;
+  div {
+    z-index: 1;
+    margin-top: 15px;
+    background-color: #3e4246;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px;
+    border-radius: 3px;
+    a {
+      padding: 15px 0;
+    }
   }
+
   ${DropdownContainer}:hover &,  &:hover {
     visibility: visible;
     pointer-events: auto;
@@ -164,10 +178,21 @@ const Nav = () => {
         <DropdownContainer>
           <NavLink to="/about">About</NavLink>
           <DropdownContent>
-            <NavLink to="/self-compassion">Self-Compassion</NavLink>
-            <NavLink to="/depression">Depression</NavLink>
+            <div>
+              <NavLink to="/self-compassion">Self-Compassion</NavLink>
+              <NavLink to="/depression">Depression</NavLink>
+            </div>
           </DropdownContent>
         </DropdownContainer>
+        <LinkContainer mobile>
+          <NavLink to="/about">About</NavLink>
+        </LinkContainer>
+        <LinkContainer mobile>
+          <NavLink to="/self-compassion">Self-Compassion</NavLink>
+        </LinkContainer>
+        <LinkContainer mobile>
+          <NavLink to="/depression">Depression</NavLink>
+        </LinkContainer>
         <LinkContainer>
           <NavLink to="/resources">Resources</NavLink>
         </LinkContainer>
