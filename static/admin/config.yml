@@ -42,6 +42,9 @@ collections:
               - label: Image
                 name: image
                 widget: image
+              - label: URL
+                name: url
+                widget: hidden
           - label: Quotes
             name: quotes
             widget: list

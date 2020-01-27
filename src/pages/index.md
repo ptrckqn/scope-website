@@ -16,6 +16,7 @@ squares:
       velit esse cillum dolore eu fugiat nulla pariatur.
     image: /images/photo-1.jpeg
     title: PROJECT
+    url: /project
   - body: >-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -23,6 +24,7 @@ squares:
       commodo consequat.
     image: /images/photo-2.jpeg
     title: AM I ELIGIBLE?
+    url: /am-i-eligible
 quotes:
   - author: Dr. Lorem Ipsum
     body: >-
@@ -40,4 +42,3 @@ quotes:
       dolore eu fugiat nulla pariatur.
     sub: Lorem ipsum dolor sit amet
 ---
-
