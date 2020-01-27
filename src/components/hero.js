@@ -31,6 +31,10 @@ const Details = styled.div`
   padding: 1.5rem;
 `;
 
+const Image = styled(Img)`
+  height: 100%;
+`;
+
 const Title = styled.h1`
   text-align: center;
   color: #fff;
@@ -70,7 +74,7 @@ const Hero = ({ title, subtitle, images }) => {
       {images &&
         images.map((image, i) => (
           <BackgroundWrapper key={i} id={i} index={index}>
-            <Img fluid={image} />
+            <Image fluid={image} />
           </BackgroundWrapper>
         ))}
       <Details>
