@@ -1,7 +1,7 @@
 ---
 title: Scope
 subtitle: The Self-Compassion Online - Preventing Depression Trial
-mainQuote: '"I changed this text through the CMS" - DR. SHADI BESHAI'
+mainQuote: '"This was changed through the cms" - DR. SHADI BESHAI'
 backgrounds:
   - src: /images/photo-5.jpeg
   - src: /images/photo-4.jpeg
@@ -42,3 +42,4 @@ quotes:
       dolore eu fugiat nulla pariatur.
     sub: Lorem ipsum dolor sit amet
 ---
+
