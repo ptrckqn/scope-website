@@ -4,8 +4,11 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10rem 3rem;
+  padding: 10rem 1.5rem;
   align-items: center;
+  @media only screen and (max-width: 39em) {
+    padding: 3rem;
+  }
 `;
 
 const Icon = styled.span`

@@ -23,7 +23,7 @@ const QuoteSpan = styled.span`
 const Quotes = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 39em) {
     grid-template-columns: 1fr;
   }
 `;
@@ -55,6 +55,7 @@ const IndexPage = ({
               url={url}
               image={image.childImageSharp.fluid}
               mirrored={count % 2 === 0}
+              key={count}
             >
               {body}
             </LearnSquares>

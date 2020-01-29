@@ -17,13 +17,15 @@ const FormWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90%;
-  max-height: 90%;
+
   overflow: scroll;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   z-index: 100;
+  @media only screen and (max-width: 39em) {
+    width: 90%;
+  }
 `;
 
 const Title = styled.h5`
@@ -31,34 +33,6 @@ const Title = styled.h5`
   font-weight: 700;
   font-size: 3rem;
   color: #131418;
-`;
-
-const Input = styled.input`
-  font-family: "Montserrat";
-  width: 100%;
-  height: 100%;
-  border: 1px solid #8f8f8f;
-  border-radius: 3px;
-  padding: 1.5rem;
-  font-size: 1.8rem;
-  transition: all 0.3s;
-  color: #131418;
-  margin: 0 auto 1.5rem;
-  :focus {
-    outline: none;
-    border: 1px solid #131418;
-  }
-  &::placeholder {
-    font-family: "Montserrat";
-  }
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.6rem;
-  }
-`;
-
-const Label = styled.label`
-  color: #8f8f8f;
-  margin-top: 1.5rem;
 `;
 
 const ApplyModal = ({ setShowApply }) => {
@@ -87,9 +61,7 @@ const ApplyModal = ({ setShowApply }) => {
     <Container name="container" onClick={handleClick}>
       <FormWrapper>
         <Title>Apply For The SCOPE Trial</Title>
-        <form>
-          <Form />
-        </form>
+        <Form />
       </FormWrapper>
     </Container>
   );

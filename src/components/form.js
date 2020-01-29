@@ -140,11 +140,13 @@ const Form = ({ full }) => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setSending(true);
-    return;
+    // https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev Development
+
+    // https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev Production
     if (!sending) {
+      setSending(true);
       const res = await fetch(
-        "https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev",
+        "https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev",
         {
           method: "POST",
           headers: {
