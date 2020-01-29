@@ -1,16 +1,21 @@
 ---
 title: Depression
-subtitle: :(
+subtitle: ""
 backgrounds:
   - src: /images/photo-8.png
 ---
 
-# Choose Your Own Adventure
+# What is Depression?
 
-Everyone’s life is unique and their relationship with mindfulness is no different. We don’t believe in a one-size-fits-all approach and so that is why buddhify will never tell you which meditation to do and when to do it. Instead we think it’s important that you get to choose how you use the app since no-one knows what you need better than you. You may want to use it every day or you may just want to use it a couple of times a month in those moments of need. If you want to deepen then we will create pathways for that. If you want to just be a casual meditator, then that’s fine too. Whatever works best for you, we will be there for you.
+Depression is a serious chronic mental health condition experienced by people around the world. It is estimated that about 13% of Canadians will experience clinical depression in their lifetime, with females being twice as likely as males to be diagnosed with this condition. Researchers have found that one episode of depression is a strong predictor of future episodes. Furthermore, approximately 50% of remitted and recovered individuals still experience a relapse or recurrence within a 12-month period.
 
-While researching some popular static site generation tools, I came across NextJS. It is developed and maintained by the Zeit team and provided a full featured static site generation solution. Just what I was looking for. The one tiny issue was that it leveraged React.
+The presentation and experience of depression is unique to every individual, but the following are some common symptoms:
 
-# Design For Independence, Not Dependence
-
-We believe that the ultimate purpose of a meditation app is to help someone no longer need a meditation app. Buddhify is designed with the aim that it becomes redundant. Our ideal outcome is that someone learns enough techniques and understands the practice well enough so that they both become independent – and don’t need the app to meditate. They may well come back to it every now and then for more inspiration and more support but they do so as a creative, empowered meditator, not a dependent ‘consumer of meditation content’.
+- Low mood
+- Loss of interest or pleasure in activities previously enjoyed
+- Change in weight or appetite
+- A slowing down of thought and physical movement (as observed by others)
+- Decreased energy or fatigue
+- Feelings of worthlessness, guilt, or hopelessness
+- Poor concentration or decision-making
+- Thoughts of death or suicide

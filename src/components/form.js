@@ -13,17 +13,6 @@ const Success = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h4`
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #131418;
-`;
-
-const InputWrapper = styled.span`
-  display: flex;
-  flex-direction: column-reverse;
-`;
-
 const Input = styled.input`
   font-family: "Montserrat";
   width: 100%;
@@ -34,7 +23,7 @@ const Input = styled.input`
   font-size: 1.8rem;
   transition: all 0.3s;
   color: #131418;
-  margin: 1.5rem auto;
+  margin: 0 auto 1.5rem;
   :focus {
     outline: none;
     border: 1px solid #131418;
@@ -47,13 +36,8 @@ const Input = styled.input`
   }
 `;
 
-const AltLabel = styled.label`
-  font-size: 2.4rem;
-  padding: 1rem 0;
+const Label = styled.label`
   color: #8f8f8f;
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.8rem;
-  }
 `;
 
 const RadioWrapper = styled.div`
@@ -140,7 +124,7 @@ const Submit = styled.span`
   }
 `;
 
-const Form = () => {
+const Form = ({ full }) => {
   const [details, setDetails] = useState({
     name: "",
     email: "",
@@ -149,99 +133,109 @@ const Form = () => {
     body: ""
   });
   const [sending, setSending] = useState(false);
-  const [status, setStatus] = useState();
 
-  function handleChange(e) {
+  const handleChange = e => {
     setDetails({ ...details, [e.target.name]: e.target.value });
-  }
+  };
 
-  async function handleSubmit(e) {
+  const handleSubmit = async e => {
     e.preventDefault();
-    // https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev Development
-
-    // https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev Production
-    await fetch("https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(details)
-    }).then(res => setStatus(res.status));
     setSending(true);
-    setDetails({
-      name: "",
-      email: "",
-      phone: "",
-      preferredContact: "",
-      body: ""
-    });
-  }
+    return;
+    if (!sending) {
+      const res = await fetch(
+        "https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(details)
+        }
+      );
+      if (res.ok) {
+        setDetails({
+          name: "",
+          email: "",
+          phone: "",
+          preferredContact: "",
+          body: ""
+        });
+        setSending(false);
+      }
+    }
+  };
 
   return (
     <Container>
-      <Title>Contact Form</Title>
-      <InputWrapper>
-        <Input
-          name="name"
-          id="name"
-          type="text"
-          placeholder="What's your name?"
-          value={details.name}
-          onChange={handleChange}
-          required
-        />
-      </InputWrapper>
-      <InputWrapper>
-        <Input
-          name="email"
-          id="email"
-          type="email"
-          placeholder="What's your email?"
-          value={details.email}
-          onChange={handleChange}
-          required
-        />
-      </InputWrapper>
-      <InputWrapper>
-        <Input
-          name="phone"
-          id="phone"
-          type="text"
-          placeholder="What's your phone number?"
-          value={details.phone}
-          onChange={handleChange}
-        />
-      </InputWrapper>
-      <AltLabel>How would you like to be contacted?</AltLabel>
-      <RadioWrapper>
-        <RadioInput
-          type="radio"
-          name="contactMethod"
-          id="emailRadio"
-          value="email"
-          onChange={() => setDetails({ ...details, preferredContact: "email" })}
-          required
-        />
-        <RadioLabel htmlFor="emailRadio">Email</RadioLabel>
-        <RadioInput
-          type="radio"
-          name="contactMethod"
-          id="phoneRadio"
-          value="phone"
-          onChange={() => setDetails({ ...details, preferredContact: "phone" })}
-        />
-        <RadioLabel htmlFor="phoneRadio">Phone</RadioLabel>
-      </RadioWrapper>
-      <InputWrapper>
-        <TextInput
-          name="body"
-          id="body"
-          placeholder="What would you like us to know?"
-          value={details.body}
-          onChange={handleChange}
-        />
-      </InputWrapper>
+      <Label htmlFor="name">Name</Label>
+      <Input
+        name="name"
+        id="name"
+        type="text"
+        placeholder="What's your name?"
+        value={details.name}
+        onChange={handleChange}
+        required
+      />
+      <Label htmlFor="email">Email</Label>
+      <Input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="What's your email?"
+        value={details.email}
+        onChange={handleChange}
+        required
+      />
+      <Label htmlFor="phone">Phone</Label>
+      <Input
+        name="phone"
+        id="phone"
+        type="text"
+        placeholder="What's your phone number?"
+        value={details.phone}
+        onChange={handleChange}
+      />
+
+      {full && (
+        <>
+          <Label>How would you like to be contacted?</Label>
+          <RadioWrapper>
+            <RadioInput
+              type="radio"
+              name="contactMethod"
+              id="emailRadio"
+              value="email"
+              onChange={() =>
+                setDetails({ ...details, preferredContact: "email" })
+              }
+              required
+            />
+            <RadioLabel htmlFor="emailRadio">Email</RadioLabel>
+            <RadioInput
+              type="radio"
+              name="contactMethod"
+              id="phoneRadio"
+              value="phone"
+              onChange={() =>
+                setDetails({ ...details, preferredContact: "phone" })
+              }
+            />
+            <RadioLabel htmlFor="phoneRadio">Phone</RadioLabel>
+          </RadioWrapper>
+          <Label htmlFor="body">Additional Information</Label>
+          <TextInput
+            name="body"
+            id="body"
+            placeholder="What would you like us to know?"
+            value={details.body}
+            onChange={handleChange}
+          />
+        </>
+      )}
+
       <Submit onClick={handleSubmit}>{sending ? "Sending..." : "Send"}</Submit>
     </Container>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
@@ -7,7 +7,7 @@ import Hero from "../components/hero";
 import LearnSquares from "../components/learnSquares";
 import Quote from "../components/quote";
 import Interested from "../components/interested";
-import Footer from "../components/footer";
+import ApplyModal from "../components/applyModal";
 
 const QuoteSpan = styled.span`
   display: block;
@@ -33,39 +33,47 @@ const IndexPage = ({
     markdownRemark: { frontmatter }
   }
 }) => {
+  const [showApply, setShowApply] = useState(false);
+
   const images = frontmatter.backgrounds.map(
     ({ src }) => src.childImageSharp.fluid
   );
 
   return (
-    <Layout pageTitle="Welcome">
-      <Hero
-        title={frontmatter.title}
-        subtitle={frontmatter.subtitle}
-        images={images}
-      />
-      <QuoteSpan>{frontmatter.mainQuote}</QuoteSpan>
-      {frontmatter.squares &&
-        frontmatter.squares.map(({ title, body, image, url }, count) => (
-          <LearnSquares
-            title={title}
-            url={url}
-            image={image.childImageSharp.fluid}
-            mirrored={count % 2 === 0}
-          >
-            {body}
-          </LearnSquares>
-        ))}
-      <Quotes>
-        {frontmatter.quotes &&
-          frontmatter.quotes.map(({ body, sub, author }) => (
-            <Quote author={author} title={sub}>
+    <>
+      <Layout pageTitle="Welcome">
+        <Hero
+          title={frontmatter.title}
+          subtitle={frontmatter.subtitle}
+          images={images}
+        />
+        <QuoteSpan>{frontmatter.mainQuote}</QuoteSpan>
+        {frontmatter.squares &&
+          frontmatter.squares.map(({ title, body, image, url }, count) => (
+            <LearnSquares
+              title={title}
+              url={url}
+              image={image.childImageSharp.fluid}
+              mirrored={count % 2 === 0}
+            >
               {body}
-            </Quote>
+            </LearnSquares>
           ))}
-      </Quotes>
-      <Interested image="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80" />
-    </Layout>
+        <Quotes>
+          {frontmatter.quotes &&
+            frontmatter.quotes.map(({ body, sub, author }) => (
+              <Quote author={author} title={sub} key={author}>
+                {body}
+              </Quote>
+            ))}
+        </Quotes>
+        <Interested
+          setShowApply={setShowApply}
+          image="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80"
+        />
+      </Layout>
+      {showApply && <ApplyModal setShowApply={setShowApply} />}
+    </>
   );
 };
 

@@ -22,6 +22,8 @@ const Container = styled.header`
 
 const Logo = styled.span`
   font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 5px;
 `;
 
 const Checkbox = styled.input`
@@ -130,7 +132,7 @@ const DropdownContent = styled.span`
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateX(-35%);
+  transform: translateX(-30%);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
@@ -163,10 +165,18 @@ const NavLink = styled(Link)`
   white-space: nowrap;
 `;
 
+const DropdownLink = styled(NavLink)`
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 400;
+`;
+
 const Nav = () => {
   return (
     <Container>
-      <Logo>(LOGO)</Logo>
+      <NavLink to="/">
+        <Logo>SCOPE</Logo>
+      </NavLink>
       <Checkbox type="checkbox" id="menu" />
       <MenuIcon htmlFor="menu">
         <span />
@@ -179,8 +189,8 @@ const Nav = () => {
           <NavLink to="/about">About</NavLink>
           <DropdownContent>
             <div>
-              <NavLink to="/self-compassion">Self-Compassion</NavLink>
-              <NavLink to="/depression">Depression</NavLink>
+              <DropdownLink to="/self-compassion">Self-Compassion</DropdownLink>
+              <DropdownLink to="/depression">Depression</DropdownLink>
             </div>
           </DropdownContent>
         </DropdownContainer>

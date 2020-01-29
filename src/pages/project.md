@@ -1,16 +1,28 @@
 ---
 title: Project
-subtitle: Luna was here
+subtitle: The Scope Trial
 backgrounds:
   - src: /images/photo-8.png
 ---
 
-# Choose Your Own Adventure
+# The SCOPE Trial
 
-Everyone’s life is unique and their relationship with mindfulness is no different. We don’t believe in a one-size-fits-all approach and so that is why buddhify will never tell you which meditation to do and when to do it. Instead we think it’s important that you get to choose how you use the app since no-one knows what you need better than you. You may want to use it every day or you may just want to use it a couple of times a month in those moments of need. If you want to deepen then we will create pathways for that. If you want to just be a casual meditator, then that’s fine too. Whatever works best for you, we will be there for you.
+Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. Self-compassion interventions have shown to be effective in treating acute depression; however, researchers have not yet tested whether these interventions can prevent future episodes of depression. The main objective of the SCOPE Trial is to examine whether a self-directed self-compassion program can prevent relapse or recurrence of depression over a 12-month period.
 
-While researching some popular static site generation tools, I came across NextJS. It is developed and maintained by the Zeit team and provided a full featured static site generation solution. Just what I was looking for. The one tiny issue was that it leveraged React.
+# Your Involvement
 
-# Design For Independence, Not Dependence
+Your involvement in the study will include the following tasks:
 
-We believe that the ultimate purpose of a meditation app is to help someone no longer need a meditation app. Buddhify is designed with the aim that it becomes redundant. Our ideal outcome is that someone learns enough techniques and understands the practice well enough so that they both become independent – and don’t need the app to meditate. They may well come back to it every now and then for more inspiration and more support but they do so as a creative, empowered meditator, not a dependent ‘consumer of meditation content’.
+## Questionnaires
+
+You will be asked to complete a demographics form and several short questionnaires throughout the study (at the 3-month, 6-month, 9-month, and 12-month check-ins). The questionnaires will ask about how you feel, think, and act in certain situations, as well as your day-to-day experiences.
+
+## Phone Interviews
+
+ou will be asked to partake in several phone interviews where a researcher will ask you ca series of question about your mood and history of daily functioning. The first phone interview will determine your eligibility to further participate in the study. Once eligibility is established, there will be four additional phone interviews at the 3-month, 6-month, 9-month, and 12-month check-ins where you will be asked similar questions.
+
+## Self-Compassion Program
+
+Once eligibility is established, you will be asked to complete an online audio self-directed program on self-compassion. The program lasts approximately 6 hours and 40 minutes and will be divided into six audio sessions. You will receive 1 audio session per week to complete over 6 weeks. The content of the program includes education and research on self-compassion, and exercises designed to cultivate self-compassion.
+
+# Compensation

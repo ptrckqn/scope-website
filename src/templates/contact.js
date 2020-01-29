@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Form from "../components/form";
-import Footer from "../components/footer";
 
 const Container = styled.section`
   display: grid;
@@ -17,6 +16,17 @@ const Container = styled.section`
     grid-template-columns: 1fr;
     grid-row-gap: 10rem;
   }
+`;
+
+const Title = styled.h5`
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #131418;
+`;
+
+const Div = styled.div`
+  width: 100%;
 `;
 
 const MarkdownData = styled.div`
@@ -52,7 +62,10 @@ const ContactPage = ({
         images={images}
       />
       <Container>
-        <Form />
+        <Div>
+          <Title>Contact Us</Title>
+          <Form full />
+        </Div>
         <MarkdownData dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </Layout>

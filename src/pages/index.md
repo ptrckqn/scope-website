@@ -26,20 +26,16 @@ squares:
     title: AM I ELIGIBLE?
     url: /am-i-eligible
 quotes:
-  - author: Dr. Lorem Ipsum
+  - author: Dr. Tara Brach, PhD
     body: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    sub: Lorem ipsum dolor sit amet a
-  - author: Dr. Lorem Ipsum
+      Self-compassion is the ground of all emotional healing…
+    sub: Author of Radical Acceptance
+  - author: Dr. Kristin D. Neff, PhD
     body: >-
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.
-    sub: Lorem ipsum dolor sit amet
-  - author: Dr. Lorem Ipsum
+      Self-compassion honors the fact that all human beings have both strengths and weaknesses. It acknowledges the reality that we are imperfect human being who experience suffering, and are therefore worthy of compassion.
+    sub: Pioneering researcher on self-compassion
+  - author: Dr. Christopher K. Germer, PhD
     body: >-
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur.
-    sub: Lorem ipsum dolor sit amet
+      A moment of self-compassion can change your entire day. A string of such moments can change the course of your life.
+    sub: Co-developer of the Mindful Self-Compassion training program.
 ---
-

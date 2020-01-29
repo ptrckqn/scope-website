@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 
 const Container = styled.section`
@@ -28,7 +27,7 @@ const Title = styled.h4`
   width: 100%;
 `;
 
-const ApplyBtn = styled(Link)`
+const ApplyBtn = styled.button`
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -36,14 +35,23 @@ const ApplyBtn = styled(Link)`
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 5px;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
 `;
 
-const Interested = ({ image }) => {
+const Interested = ({ setShowApply, image }) => {
+  const handleClick = e => {
+    e.preventDefault();
+
+    setShowApply(true);
+  };
   return (
     <Container image={image}>
       <Details>
         <Title>Are you interested?</Title>
-        <ApplyBtn to="#">Apply Now</ApplyBtn>
+        <ApplyBtn onClick={handleClick}>Apply Now</ApplyBtn>
       </Details>
     </Container>
   );

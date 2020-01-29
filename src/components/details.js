@@ -29,6 +29,9 @@ const MarkdownData = styled.div`
   a {
     color: inherit;
   }
+  li {
+    margin-left: 20px;
+  }
 `;
 
 const Details = ({ data }) => (
