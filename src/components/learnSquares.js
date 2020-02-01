@@ -25,11 +25,11 @@ const Image = styled(Img)`
 `;
 
 const Details = styled.div`
-  padding: 6rem;
+  padding: 3rem 6rem;
   @media only screen and (max-width: 39em) {
     position: absolute;
     background-color: #fff;
-    width: 85%;
+    width: 95%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

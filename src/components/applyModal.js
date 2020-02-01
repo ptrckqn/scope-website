@@ -17,8 +17,6 @@ const FormWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  overflow: scroll;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
