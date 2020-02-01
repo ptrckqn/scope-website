@@ -145,17 +145,14 @@ const Form = ({ full }) => {
     // https://g6fpvfhdmb.execute-api.us-west-2.amazonaws.com/dev Production
     if (!sending) {
       setSending(true);
-      const res = await fetch(
-        "https://0v1lxszhha.execute-api.us-west-2.amazonaws.com/dev",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(details)
-        }
-      );
+      const res = await fetch(process.env.GATSBY_AWS_EMAIL_API, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(details)
+      });
       if (res.ok) {
         setDetails({
           name: "",
