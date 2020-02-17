@@ -2,7 +2,7 @@
 title: Self Compassion
 subtitle: ""
 backgrounds:
-  - src: /images/photo-8.png
+  - src: /images/photo-11.jpg
 ---
 
 # What Is Self-Compassion?
