@@ -69,6 +69,12 @@ const LearnBtn = styled(Link)`
   border-radius: 3px;
   padding: 1.5rem;
   float: right;
+  transition: all 300ms;
+  &:hover {
+    color: #fff;
+    border: 2px solid #202020;
+    background-color: #202020;
+  }
 `;
 
 const LearnSquares = ({ title, url, image, mirrored, children }) => {

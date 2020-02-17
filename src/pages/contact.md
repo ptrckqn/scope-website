@@ -1,5 +1,6 @@
 ---
-title: Contact Us
+title: |
+  # Contact Us
 subtitle: Let's talk
 backgrounds:
   - src: /images/photo-8.png

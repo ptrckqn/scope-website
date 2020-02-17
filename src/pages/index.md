@@ -1,7 +1,7 @@
 ---
 title: |
-  Scope  
-  Trial
+  # Scope  
+  # Trial
 subtitle: The Self-Compassion Online - Preventing Depression Trial
 mainQuote: '"This was changed through the cms" - DR. SHADI BESHAI'
 backgrounds:

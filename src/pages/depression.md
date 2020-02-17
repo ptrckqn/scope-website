@@ -1,5 +1,6 @@
 ---
-title: Depression
+title: |
+  # Depression
 subtitle: ""
 backgrounds:
   - src: /images/photo-8.png

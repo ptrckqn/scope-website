@@ -37,17 +37,17 @@ const Image = styled(Img)`
   height: 100%;
 `;
 
-const Title = styled.h1`
+const Title = styled.div`
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 7rem;
+  font-size: 3.5rem;
   letter-spacing: 3.7rem;
   padding-left: 3.7rem;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   @media only screen and (max-width: 39em) {
-    font-size: 4rem;
+    font-size: 2.5rem;
     letter-spacing: 1.6rem;
     padding-left: 1.6rem;
   }

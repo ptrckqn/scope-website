@@ -1,5 +1,6 @@
 ---
-title: The SCOPE Trial Team
+title: |
+  # The SCOPE Trial Team
 subtitle: Who We Are
 backgrounds:
   - src: /images/photo-8.png
