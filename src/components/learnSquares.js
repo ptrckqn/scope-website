@@ -52,7 +52,7 @@ const Title = styled.h4`
   color: #131418;
 `;
 
-const Body = styled.p`
+const Body = styled.div`
   font-size: 1.5rem;
   line-height: 3rem;
   margin-bottom: 2rem;

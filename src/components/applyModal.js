@@ -14,9 +14,9 @@ const Container = styled.div`
 
 const FormWrapper = styled.div`
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -58,7 +58,7 @@ const ApplyModal = ({ setShowApply }) => {
   return (
     <Container name="container" onClick={handleClick}>
       <FormWrapper>
-        <Title>Apply For The SCOPE Trial</Title>
+        <Title>SCOPE Trial Application</Title>
         <Form full />
       </FormWrapper>
     </Container>
