@@ -158,26 +158,6 @@ collections:
           - label: Body
             name: body
             widget: markdown
-      - file: src/pages/resources.md
-        label: Resources Page
-        name: resources
-        fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Subtitle
-            name: subtitle
-            widget: string
-          - label: Background Images
-            name: backgrounds
-            widget: list
-            fields:
-              - label: Image
-                name: src
-                widget: image
-          - label: Body
-            name: body
-            widget: markdown
       - file: src/pages/self-compassion.md
         label: Self-Compassion Page
         name: self-compassion

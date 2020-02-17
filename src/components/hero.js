@@ -45,6 +45,7 @@ const Title = styled.h1`
   letter-spacing: 3.7rem;
   padding-left: 3.7rem;
   font-weight: 700;
+  line-height: 1.1;
   @media only screen and (max-width: 39em) {
     font-size: 4rem;
     letter-spacing: 1.6rem;

@@ -7,7 +7,7 @@ const Container = styled.header`
   top: 0;
   margin: 0 auto;
   z-index: 10;
-  max-width: 100rem;
+  max-width: 90rem;
   background-color: #7d8c8f;
   width: 100%;
   height: 8rem;
@@ -131,9 +131,9 @@ const DropdownContainer = styled.span`
 
 const DropdownContent = styled.span`
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
-  transform: translateX(0);
+  transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
@@ -143,15 +143,11 @@ const DropdownContent = styled.span`
   div {
     z-index: 1;
     margin-top: 15px;
-    background-color: rgba(62, 66, 70, 0.5);
     display: flex;
     flex-direction: column;
     width: auto;
-    padding: 10px;
     border-radius: 3px;
-    a {
-      padding: 15px 0;
-    }
+    overflow: hidden;
   }
 
   ${DropdownContainer}:hover &,  &:hover {
@@ -175,7 +171,12 @@ const DropdownLink = styled(NavLink)`
   text-transform: capitalize;
   font-size: 1.4rem;
   font-weight: 400;
+  text-align: center;
+  background-color: rgba(62, 66, 70, 1);
+  padding: 15px;
+  transition: background-color 300ms;
   &:hover {
+    background-color: rgba(62, 66, 70, 0.5);
     color: #fff;
   }
 `;
@@ -195,19 +196,26 @@ const Nav = () => {
           <NavLink to="/">Home</NavLink>
         </LinkContainer>
         <DropdownContainer>
-          <NavLink to="/about">About</NavLink>
+          <span>About</span>
           <DropdownContent>
             <div>
               <DropdownLink to="/project">SCOPE Trial</DropdownLink>
+              <DropdownLink to="/about">The Team</DropdownLink>
               <DropdownLink to="/am-i-eligible">Eligibility</DropdownLink>
             </div>
           </DropdownContent>
         </DropdownContainer>
         <LinkContainer mobile>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/project">SCOPE Trial</NavLink>
+        </LinkContainer>
+        <LinkContainer mobile>
+          <NavLink to="/about">The Team</NavLink>
+        </LinkContainer>
+        <LinkContainer mobile>
+          <NavLink to="/am-i-eligible">Eligibility</NavLink>
         </LinkContainer>
         <DropdownContainer>
-          <NavLink to="/resources">Resources</NavLink>
+          <span>Resources</span>
           <DropdownContent>
             <div>
               <DropdownLink to="/self-compassion">Self-Compassion</DropdownLink>
@@ -215,9 +223,6 @@ const Nav = () => {
             </div>
           </DropdownContent>
         </DropdownContainer>
-        <LinkContainer mobile>
-          <NavLink to="/resources">Resources</NavLink>
-        </LinkContainer>
         <LinkContainer mobile>
           <NavLink to="/self-compassion">Self-Compassion</NavLink>
         </LinkContainer>
