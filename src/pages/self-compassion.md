@@ -7,4 +7,4 @@ backgrounds:
 
 # What Is Self-Compassion?
 
-Self-compassion is defined as being moved by one’s own suffering, and having a desire to alleviate such suffering. Rather than criticizing and judging oneself for any perceived failures or inadequacies, self-compassion is reflected through a sense of kindness and understanding towards oneself, and to accept one’s “humanness”. Researchers have found that self-compassion is associated with greater well-being and other positive health outcomes. Learn more about [self-compassion.](/)
+Self-compassion is defined as being moved by one’s own suffering, and having a desire to alleviate such suffering. Rather than criticizing and judging oneself for any perceived failures or inadequacies, self-compassion is reflected through a sense of kindness and understanding towards oneself, and to accept one’s “humanness”. Researchers have found that self-compassion is associated with greater well-being and other positive health outcomes. Learn more about [self-compassion.](https://self-compassion.org/the-three-elements-of-self-compassion-2/)

@@ -28,17 +28,23 @@ const Title = styled.h4`
 `;
 
 const ApplyBtn = styled.button`
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  background-color: #fff;
+  background-color: transparent;
   padding: 1.5rem;
-  border-radius: 5px;
-  border: none;
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  transition: all 300ms;
+  &:hover {
+    color: #202020;
+    background-color: #fff;
+    border: 2px solid #202020;
+  }
 `;
 
 const Interested = ({ setShowApply, image }) => {

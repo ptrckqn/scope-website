@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const MarkdownData = styled.div`
-  color: #8f8f8f;
+  color: #202020;
   h1 {
     font-weight: 700;
     font-size: 2.5rem;

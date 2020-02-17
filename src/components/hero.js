@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import remark from "remark";
+import remarkHtml from "remark-html";
 
 const Container = styled.section`
   position: relative;
@@ -39,11 +41,14 @@ const Title = styled.h1`
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 8rem;
-  letter-spacing: 1.7rem;
+  font-size: 7rem;
+  letter-spacing: 3.7rem;
+  padding-left: 3.7rem;
   font-weight: 700;
   @media only screen and (max-width: 39em) {
-    font-size: 5rem;
+    font-size: 4rem;
+    letter-spacing: 1.6rem;
+    padding-left: 1.6rem;
   }
 `;
 
@@ -51,8 +56,9 @@ const Subtitle = styled.h2`
   text-align: center;
   color: #fff;
   font-weight: 600;
+  font-size: 2.3rem;
   @media only screen and (max-width: 39em) {
-    font-size: 3rem;
+    font-size: rem;
   }
 `;
 
@@ -69,6 +75,15 @@ const Hero = ({ title, subtitle, images }) => {
     return;
   }, []);
 
+  const createHtml = str => {
+    return {
+      __html: remark()
+        .use(remarkHtml)
+        .processSync(str)
+        .toString()
+    };
+  };
+
   return (
     <Container>
       {images &&
@@ -78,7 +93,7 @@ const Hero = ({ title, subtitle, images }) => {
           </BackgroundWrapper>
         ))}
       <Details>
-        <Title>{title}</Title>
+        <Title dangerouslySetInnerHTML={createHtml(title)} />
         <Subtitle>{subtitle}</Subtitle>
       </Details>
     </Container>

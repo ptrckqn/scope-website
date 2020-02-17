@@ -59,7 +59,7 @@ const ApplyModal = ({ setShowApply }) => {
     <Container name="container" onClick={handleClick}>
       <FormWrapper>
         <Title>Apply For The SCOPE Trial</Title>
-        <Form />
+        <Form full />
       </FormWrapper>
     </Container>
   );

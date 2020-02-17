@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import remark from "remark";
+import remarkHtml from "remark-html";
 
 const Container = styled.section`
   width: 100%;
@@ -26,6 +28,12 @@ const Image = styled(Img)`
 
 const Details = styled.div`
   padding: 3rem 6rem;
+  a {
+    color: inherit;
+  }
+  li {
+    margin-left: 20px;
+  }
   @media only screen and (max-width: 39em) {
     position: absolute;
     background-color: #fff;
@@ -48,7 +56,7 @@ const Body = styled.p`
   font-size: 1.5rem;
   line-height: 3rem;
   margin-bottom: 2rem;
-  color: #8f8f8f;
+  color: #202020;
 `;
 
 const LearnBtn = styled(Link)`
@@ -64,11 +72,19 @@ const LearnBtn = styled(Link)`
 `;
 
 const LearnSquares = ({ title, url, image, mirrored, children }) => {
+  const createHtml = str => {
+    return {
+      __html: remark()
+        .use(remarkHtml)
+        .processSync(str)
+        .toString()
+    };
+  };
   return (
     <Container mirrored={mirrored}>
       <Details>
         <Title>{title}</Title>
-        <Body>{children}</Body>
+        <Body dangerouslySetInnerHTML={createHtml(children)} />
         <LearnBtn to={url}>Learn More</LearnBtn>
       </Details>
       <Image fluid={image} />

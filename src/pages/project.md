@@ -7,7 +7,7 @@ backgrounds:
 
 # The SCOPE Trial
 
-Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. Self-compassion interventions have shown to be effective in treating acute depression; however, researchers have not yet tested whether these interventions can prevent future episodes of depression. The main objective of the SCOPE Trial is to examine whether a self-directed self-compassion program can prevent relapse or recurrence of depression over a 12-month period.
+Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. Self-compassion interventions have shown to be effective in treating acute depression; however, researchers have not yet tested whether these interventions can prevent future episodes of depression. The main objective of the SCOPE Trial is to examine whether a self-directed self-compassion reflection program administered online can stave off the progression of depression and prevent the experience of this illness.
 
 # Your Involvement
 
@@ -26,3 +26,5 @@ ou will be asked to partake in several phone interviews where a researcher will 
 Once eligibility is established, you will be asked to complete an online audio self-directed program on self-compassion. The program lasts approximately 6 hours and 40 minutes and will be divided into six audio sessions. You will receive 1 audio session per week to complete over 6 weeks. The content of the program includes education and research on self-compassion, and exercises designed to cultivate self-compassion.
 
 # Compensation
+
+You will be compensated for your participation in the study: a $10 gift card for completing the first part and a $10 gift card completing the second part of the study, and then, if eligible, you will receive a $30 gift card for each of the first three check-ins (for a total of $90 in gift cards) and a $40 gift card for the fourth (and final) check-in. You are eligible to receive a total of $150 in gift cards.”

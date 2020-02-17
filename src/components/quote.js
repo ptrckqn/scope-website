@@ -14,8 +14,8 @@ const Container = styled.div`
 const Icon = styled.span`
   position: relative;
   border: 2px solid #afafaf;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   margin-bottom: 3rem;
   svg {
@@ -23,7 +23,7 @@ const Icon = styled.span`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 7rem;
+    width: 5rem;
   }
 `;
 
@@ -36,13 +36,13 @@ const Body = styled.p`
 const Author = styled.span`
   text-align: center;
   font-weight: 700;
-  color: #8f8f8f;
+  color: #202020;
 `;
 
 const Title = styled.span`
   text-align: center;
   font-style: oblique;
-  color: #8f8f8f;
+  color: #202020;
 `;
 
 const Quote = ({ author, title, children }) => {
@@ -55,7 +55,6 @@ const Quote = ({ author, title, children }) => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 463 463"
         >
-          <defs></defs>
           <path
             d="M355.41 214.75v-.07a48.42 48.42 0 1 0-32.65 45.66c-10.87 62.33-59.47 102.52-14.41 69.44 49.96-36.68 47.12-113.62 47.06-115.03zM200.88 263a48.2 48.2 0 0 0 15.64-2.64c-10.87 62.32-59.47 102.52-14.42 69.44 50-36.68 47.13-113.62 47.07-115v-.07A48.29 48.29 0 1 0 200.88 263z"
             transform="translate(-22.52 -22.52)"

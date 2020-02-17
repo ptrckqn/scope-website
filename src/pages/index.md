@@ -1,5 +1,7 @@
 ---
-title: Scope
+title: |
+  Scope  
+  Trial
 subtitle: The Self-Compassion Online - Preventing Depression Trial
 mainQuote: '"This was changed through the cms" - DR. SHADI BESHAI'
 backgrounds:
@@ -8,20 +10,16 @@ backgrounds:
   - src: /images/photo-9.jpeg
   - src: /images/photo-3.jpeg
 squares:
-  - body: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+  - body: |
+      The main objective of the SCOPE Trial is to examine whether a 7-week self-compassion program administered online can stave off the progression of depression and prevent the experience of this illness. The SCOPE Trial is composed of four parts that span over a 12-month period, including the 7-week program. You will be compensated for your participation in this meaningful research.
     image: /images/photo-1.jpeg
     title: PROJECT
     url: /project
-  - body: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+  - body: |
+      We are looking for individuals who meet the following criteria:
+      - 18 Years of age or older
+      - Have experienced [depression](/depression) or symptoms of depression in the past
+      - Have access to a computer and the internet
     image: /images/photo-2.jpeg
     title: AM I ELIGIBLE?
     url: /am-i-eligible

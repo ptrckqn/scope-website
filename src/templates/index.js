@@ -68,10 +68,7 @@ const IndexPage = ({
               </Quote>
             ))}
         </Quotes>
-        <Interested
-          setShowApply={setShowApply}
-          image="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80"
-        />
+        <Interested setShowApply={setShowApply} image="/images/photo-10.jpg" />
       </Layout>
       {showApply && <ApplyModal setShowApply={setShowApply} />}
     </>

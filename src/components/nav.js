@@ -83,7 +83,8 @@ const Links = styled.ul`
   grid-template-columns: repeat(4, max-content);
   grid-column-gap: 3rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.5rem;
   @media only screen and (max-width: 39em) {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
@@ -132,16 +133,17 @@ const DropdownContent = styled.span`
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateX(-30%);
+  transform: translateX(0);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
   z-index: 1;
   margin-top: 20px;
+  width: 150px;
   div {
     z-index: 1;
     margin-top: 15px;
-    background-color: #3e4246;
+    background-color: rgba(62, 66, 70, 0.5);
     display: flex;
     flex-direction: column;
     width: auto;
@@ -163,12 +165,19 @@ const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  transition: color 300ms;
+  &:hover {
+    color: #3e4246;
+  }
 `;
 
 const DropdownLink = styled(NavLink)`
   text-transform: capitalize;
   font-size: 1.4rem;
   font-weight: 400;
+  &:hover {
+    color: #fff;
+  }
 `;
 
 const Nav = () => {
@@ -189,22 +198,31 @@ const Nav = () => {
           <NavLink to="/about">About</NavLink>
           <DropdownContent>
             <div>
-              <DropdownLink to="/self-compassion">Self-Compassion</DropdownLink>
-              <DropdownLink to="/depression">Depression</DropdownLink>
+              <DropdownLink to="/project">SCOPE Trial</DropdownLink>
+              <DropdownLink to="/am-i-eligible">Eligibility</DropdownLink>
             </div>
           </DropdownContent>
         </DropdownContainer>
         <LinkContainer mobile>
           <NavLink to="/about">About</NavLink>
         </LinkContainer>
+        <DropdownContainer>
+          <NavLink to="/resources">Resources</NavLink>
+          <DropdownContent>
+            <div>
+              <DropdownLink to="/self-compassion">Self-Compassion</DropdownLink>
+              <DropdownLink to="/depression">Depression</DropdownLink>
+            </div>
+          </DropdownContent>
+        </DropdownContainer>
+        <LinkContainer mobile>
+          <NavLink to="/resources">Resources</NavLink>
+        </LinkContainer>
         <LinkContainer mobile>
           <NavLink to="/self-compassion">Self-Compassion</NavLink>
         </LinkContainer>
         <LinkContainer mobile>
           <NavLink to="/depression">Depression</NavLink>
-        </LinkContainer>
-        <LinkContainer>
-          <NavLink to="/resources">Resources</NavLink>
         </LinkContainer>
         <LinkContainer>
           <NavLink to="/contact">Contact</NavLink>
