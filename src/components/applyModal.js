@@ -21,6 +21,8 @@ const FormWrapper = styled.div`
   padding: 20px;
   border-radius: 5px;
   z-index: 100;
+  max-height: 75vh;
+  overflow: scroll;
   @media only screen and (max-width: 39em) {
     width: 90%;
   }

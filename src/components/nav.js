@@ -15,15 +15,14 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 720px) {
     padding: 0 3rem;
   }
 `;
 
-const Logo = styled.span`
-  font-weight: 300;
-  font-size: 3rem;
-  letter-spacing: 5px;
+const Logo = styled.img`
+  display: block;
+  height: 40px;
 `;
 
 const Checkbox = styled.input`
@@ -185,7 +184,7 @@ const Nav = () => {
   return (
     <Container>
       <NavLink to="/">
-        <Logo>SCOPE</Logo>
+        <Logo src="/images/SCOPE-letter-mark.png" alt="SCOPE Trial" />
       </NavLink>
       <Checkbox type="checkbox" id="menu" />
       <MenuIcon htmlFor="menu">

@@ -10,12 +10,14 @@ const Container = styled.section`
   height: 55vh;
   transition: all 0.3s;
   overflow: hidden;
+  min-height: 250px;
 `;
 
 const BackgroundWrapper = styled.div`
   position: absolute;
   width: 101%;
   height: 55.2vh;
+  min-height: 250px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,10 +29,13 @@ const BackgroundWrapper = styled.div`
 const Details = styled.div`
   position: absolute;
   width: 100%;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1.5rem;
+  @media only screen and (max-width: 39em) {
+    padding: 0.5rem;
+  }
 `;
 
 const Image = styled(Img)`
@@ -47,7 +52,7 @@ const Title = styled.div`
   font-weight: 700;
   line-height: 1.2;
   @media only screen and (max-width: 39em) {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 1.6rem;
     padding-left: 1.6rem;
   }
@@ -56,11 +61,8 @@ const Title = styled.div`
 const Subtitle = styled.h2`
   text-align: center;
   color: #fff;
-  font-weight: 600;
-  font-size: 2.3rem;
-  @media only screen and (max-width: 39em) {
-    font-size: rem;
-  }
+  font-weight: 300;
+  font-size: 2rem;
 `;
 
 const Hero = ({ title, subtitle, images }) => {
