@@ -1,5 +1,5 @@
 ---
-title: Project
+title: SCOPE Trial
 subtitle: The Scope Trial
 backgrounds:
   - src: /images/photo-8.png
