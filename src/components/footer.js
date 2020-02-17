@@ -10,10 +10,16 @@ const Container = styled.footer`
   align-items: center;
 `;
 
+const Logo = styled.img`
+  display: block;
+  height: 40px;
+`;
+
 const Body = styled.p`
   color: #fff;
   text-align: center;
   font-weight: 300;
+  margin: 1rem auto;
 `;
 
 const MadeBy = styled.a`
@@ -29,7 +35,7 @@ const MadeBy = styled.a`
 const Footer = () => {
   return (
     <Container>
-      <Body>The SCOPE Trial</Body>
+      <Logo src="/images/SCOPE-letter-mark.png" alt="SCOPE Trial" />
       <Body>University of Regina, Department of Psychology</Body>
       <MadeBy href="https://github.com/ptrckqn">Made by Patrick Quan</MadeBy>
     </Container>
