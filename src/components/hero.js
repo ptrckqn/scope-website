@@ -11,17 +11,19 @@ const Container = styled.section`
   transition: all 0.3s;
   overflow: hidden;
   min-height: 250px;
+  background-color: transparent;
 `;
 
 const BackgroundWrapper = styled.div`
-  position: absolute;
-  width: 101%;
+  position: fixed;
+  width: 100%;
+  max-width: 90rem;
   height: 55.2vh;
   min-height: 250px;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   transition: all 0.7s;
+  z-index: -1;
   opacity: ${props => (props.id === props.index ? "1" : "0")};
   visibility: ${props => (props.id === props.index ? "visible" : "hidden")};
 `;

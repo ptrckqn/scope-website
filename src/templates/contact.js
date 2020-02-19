@@ -7,6 +7,7 @@ import Hero from "../components/hero";
 import Form from "../components/form";
 
 const Container = styled.section`
+  background: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3rem;

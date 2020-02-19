@@ -6,6 +6,7 @@ import remark from "remark";
 import remarkHtml from "remark-html";
 
 const Container = styled.section`
+  background: #fff;
   width: 100%;
   height: 50%;
   display: flex;

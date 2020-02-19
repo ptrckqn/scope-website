@@ -7,6 +7,7 @@ import Hero from "../components/hero";
 import Details from "../components/details";
 
 const Container = styled.section`
+  background: #fff;
   padding: 5rem;
   @media only screen and (max-width: 39em) {
     padding: 5rem 3rem;

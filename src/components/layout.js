@@ -47,7 +47,7 @@ body{
 const Container = styled.div`
   max-width: 90rem;
   margin: 8rem auto 0;
-  background-color: #fff;
+  background-color: transparent;
 `;
 
 const Layout = ({ pageTitle, children }) => {
