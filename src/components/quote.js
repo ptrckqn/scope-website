@@ -32,19 +32,21 @@ const Body = styled.p`
   text-align: center;
   margin-bottom: 3rem;
   color: #131418;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 `;
 
 const Author = styled.span`
   text-align: center;
   font-weight: 700;
   color: #202020;
+  font-size: 1.4rem;
 `;
 
 const Title = styled.span`
   text-align: center;
   font-style: oblique;
   color: #202020;
+  font-size: 1.4rem;
 `;
 
 const Quote = ({ author, title, children }) => {
