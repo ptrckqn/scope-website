@@ -32,6 +32,7 @@ const Body = styled.p`
   text-align: center;
   margin-bottom: 3rem;
   color: #131418;
+  font-size: 1.5rem;
 `;
 
 const Author = styled.span`

@@ -15,9 +15,9 @@ const QuoteSpan = styled.span`
   background-color: #3e4246;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem;
 `;
 
 const Quotes = styled.section`

@@ -48,11 +48,14 @@ const Title = styled.div`
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: 3.7rem;
   padding-left: 3.7rem;
   font-weight: 700;
   line-height: 1.2;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3.2rem;
+  }
   @media only screen and (max-width: 39em) {
     font-size: 2.2rem;
     letter-spacing: 1.6rem;
