@@ -15,4 +15,4 @@ Regina, Saskatchewan, S4S 0A2
 
 Phone: [](tel:306-585-4992)306-585-4459
 
-Email: [d](mailto:femm.study@uregina.ca)cc.lab@uregina.ca
+Email: [](mailto:femm.study@uregina.ca)dcc.lab@uregina.ca
