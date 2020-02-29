@@ -25,6 +25,8 @@ squares:
   - body: >
       We are looking for individuals who meet the following criteria:
 
+      - Canadian residents
+
       - 18 Years of age or older
 
       - Have experienced [depression](/depression) or symptoms of depression in
@@ -32,7 +34,7 @@ squares:
 
       - Have access to a computer and the internet
 
-      - ...
+      - And more...
     image: /images/photo-2.jpeg
     title: AM I ELIGIBLE?
     url: /am-i-eligible
