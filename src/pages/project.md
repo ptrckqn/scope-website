@@ -673,6 +673,8 @@ Self-compassion is a flourishing concept in Western psychology. Evidence from sc
 
 <!--EndFragment-->
 
+
+
 # Your Involvement
 
 Your involvement in the study will include the following tasks:
@@ -688,6 +690,8 @@ You will be asked to partake in several phone interviews where a researcher will
 ## Self-Compassion Reflection Program
 
 Once eligibility is established, you will receive access to the Self-Compassion Reflection Program. The program is made up of 7 modules in total and you will receive one module each week for 7 weeks. The anticipated benefits of the program include: (a) preventing future episodes of depression, (b) an increase in self-compassion and mindfulness, and (c) a decrease in symptoms of depression.
+
+
 
 # Procedure (How the SCOPE Trial process works?)
 
@@ -1357,13 +1361,21 @@ The SCOPE Trial is comprised of 4 parts:
 
 <!--\[if !supportLists]-->1.<!--\[endif]-->We will first ask you to read and complete our consent process, then complete a number of brief questionnaires (Part 1).
 
+
+
 <!--\[if !supportLists]-->2.<!--\[endif]-->We will also schedule to complete a phone interview (Part 2) with you during which a researcher will ask about your general mood, daily functioning, and mental health status. This interview is brief, and should take no more than 5-20 minutes of your time. Based on your responses on the questionnaires and phone interview, we will determine whether you are eligible to further continue with the study.
 
+
+
 <!--\[if !supportLists]-->3.<!--\[endif]-->If deemed eligible, you will receive unlimited access to the 7-week online self-directed Self-Compassion Reflection Program (Part 3). The program is made up of 7 modules—you will receive one module each week for 7 weeks.
+
+
 
 <!--\[if !supportLists]-->4.<!--\[endif]-->After completing the 7-week program, we will monitor your progress at four different check-ins (Part 4). The check-ins will occur at 3, 6, 9, and 12 months since shortly before starting the program. During each scheduled check-in, you will be asked to complete a set of online questionnaires and a phone interview with a researcher (similar to the phone interview in Part 2).
 
 <!--EndFragment-->
+
+
 
 # Compensation
 
