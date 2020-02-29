@@ -5,7 +5,7 @@ subtitle: ' '
 backgrounds:
   - src: /images/photo-8.png
 ---
-# The SCOPE Trial
+# SCOPE Trial
 
 <!--\\\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
