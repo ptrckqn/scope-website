@@ -7,14 +7,14 @@ backgrounds:
 ---
 # The SCOPE Trial
 
-<!--\\[if gte mso 9]><xml>
+<!--\\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
   <o:PixelsPerInch>96</o:PixelsPerInch>
  </o:OfficeDocumentSettings>
-</xml><!\\[endif]-->
+</xml><!\\\[endif]-->
 
-<!--\\[if gte mso 9]><xml>
+<!--\\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -53,9 +53,9 @@ backgrounds:
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\\[endif]-->
+</xml><!\\\[endif]-->
 
-<!--\\[if gte mso 9]><xml>
+<!--\\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="380">
@@ -642,9 +642,9 @@ backgrounds:
   <w:LsdException Locked="false" Priority="52"
    Name="List Table 7 Colorful Accent 6"/>
  </w:LatentStyles>
-</xml><!\\[endif]-->
+</xml><!\\\[endif]-->
 
-<!--\\[if gte mso 10]>
+<!--\\\[if gte mso 10]>
 <style>
  /* Style Definitions */
 table.MsoNormalTable
@@ -665,7 +665,7 @@ table.MsoNormalTable
 	mso-hansi-font-family:Calibri;
 	mso-hansi-theme-font:minor-latin;}
 </style>
-<!\\[endif]-->
+<!\\\[endif]-->
 
 <!--StartFragment-->
 
@@ -673,7 +673,7 @@ Self-compassion is a flourishing concept in Western psychology. Evidence from sc
 
 <!--EndFragment-->
 
-
+# <br>
 
 # Your Involvement
 
@@ -690,8 +690,6 @@ You will be asked to partake in several phone interviews where a researcher will
 ## Self-Compassion Reflection Program
 
 Once eligibility is established, you will receive access to the Self-Compassion Reflection Program. The program is made up of 7 modules in total and you will receive one module each week for 7 weeks. The anticipated benefits of the program include: (a) preventing future episodes of depression, (b) an increase in self-compassion and mindfulness, and (c) a decrease in symptoms of depression.
-
-
 
 # Procedure (How the SCOPE Trial process works?)
 
