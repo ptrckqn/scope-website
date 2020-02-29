@@ -7,14 +7,14 @@ backgrounds:
 ---
 # The SCOPE Trial
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
   <o:PixelsPerInch>96</o:PixelsPerInch>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -53,9 +53,9 @@ backgrounds:
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="380">
@@ -642,9 +642,9 @@ backgrounds:
   <w:LsdException Locked="false" Priority="52"
    Name="List Table 7 Colorful Accent 6"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
 table.MsoNormalTable
@@ -665,7 +665,7 @@ table.MsoNormalTable
 	mso-hansi-font-family:Calibri;
 	mso-hansi-theme-font:minor-latin;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -683,11 +683,15 @@ You will be asked to complete a demographics form and several short questionnair
 
 ## Phone Interviews
 
-You will be asked to partake in several phone interviews where a researcher will ask you a series of question about your mood and history of daily functioning. The first phone interview will determine your eligibility to further participate in the study. Once eligibility is established, there will be four additional phone interviews at the 3-month, 6-month, 9-month, and 12-month check-ins where you will be asked similar questions.
+You will be asked to partake in several phone interviews where a researcher will ask you a series of question about your mood and history of daily functioning. The phone interviews are brief and may last between 5 to 20 minutes. The first phone interview will determine your eligibility to further participate in the study. Once eligibility is established, there will be four additional phone interviews at the 3-month, 6-month, 9-month, and 12-month check-ins where you will be asked similar questions.
 
 ## Self-Compassion Program
 
-Once eligibility is established, you will be asked to complete an online audio self-directed program on self-compassion. The program lasts approximately 6 hours and 40 minutes and will be divided into six audio sessions. You will receive 1 audio session per week to complete over 6 weeks. The content of the program includes education and research on self-compassion, and exercises designed to cultivate self-compassion.
+Once eligibility is established, you will receive access to the Self-Compassion Reflection Program. The program is made up of 7 modules in total and you will receive one module each week for 7 weeks. The anticipated benefits of the program include: (a) preventing future episodes of depression, (b) an increase in self-compassion and mindfulness, and (c) a decrease in symptoms of depression.
+
+# Procedure (How the SCOPE Trial process works?)
+
+You will be compensated for your participation in the study: a $10 gift card for completing the first part and a $10 gift card completing the second part of the study, and then, if eligible, you will receive a $30 gift card for each of the first three check-ins (for a total of $90 in gift cards) and a $40 gift card for the fourth (and final) check-in. You are eligible to receive a total of $150 in gift cards.”
 
 # Compensation
 
