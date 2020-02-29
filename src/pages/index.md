@@ -31,6 +31,8 @@ squares:
       the past
 
       - Have access to a computer and the internet
+
+      - ...
     image: /images/photo-2.jpeg
     title: AM I ELIGIBLE?
     url: /am-i-eligible
