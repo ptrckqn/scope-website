@@ -1,11 +1,10 @@
 ---
 title: |
   # Contact Us
-subtitle: Let's talk
+subtitle: ' '
 backgrounds:
   - src: /images/photo-8.png
 ---
-
 # Contact Information
 
 The SCOPE Trial, University of Regina
@@ -14,6 +13,6 @@ Department of Psychology, 3737 Wascana Parkway
 
 Regina, Saskatchewan, S4S 0A2
 
-Phone: [306-585-4992](tel:306-585-4992)
+Phone: [](tel:306-585-4992)306-585-029
 
-Email: [femm.study@uregina.ca](mailto:femm.study@uregina.ca)
+Email: [d](mailto:femm.study@uregina.ca)cc.lab@uregina.ca
