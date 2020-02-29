@@ -7,9 +7,11 @@ backgrounds:
 ---
 # Contact Information
 
-The SCOPE Trial, University of Regina
+The SCOPE Trial
 
-Department of Psychology, 3737 Wascana Parkway
+University of Regina
+
+Department of Psychology
 
 Regina, Saskatchewan, S4S 0A2
 
