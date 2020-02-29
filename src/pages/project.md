@@ -685,7 +685,7 @@ You will be asked to complete a demographics form and several short questionnair
 
 You will be asked to partake in several phone interviews where a researcher will ask you a series of question about your mood and history of daily functioning. The phone interviews are brief and may last between 5 to 20 minutes. The first phone interview will determine your eligibility to further participate in the study. Once eligibility is established, there will be four additional phone interviews at the 3-month, 6-month, 9-month, and 12-month check-ins where you will be asked similar questions.
 
-## Self-Compassion Program
+## Self-Compassion Reflection Program
 
 Once eligibility is established, you will receive access to the Self-Compassion Reflection Program. The program is made up of 7 modules in total and you will receive one module each week for 7 weeks. The anticipated benefits of the program include: (a) preventing future episodes of depression, (b) an increase in self-compassion and mindfulness, and (c) a decrease in symptoms of depression.
 
