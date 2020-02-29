@@ -702,8 +702,6 @@ The SCOPE Trial is comprised of 4 parts:
 3. If deemed eligible, you will receive access to the 7-week online self-directed Self-Compassion Reflection Program (Part 3). The program is made up of 7 modules, and you will receive one module each week for 7 weeks.
 4. After completing the 7-week program, we will monitor you progress at four different check-ins (Part 4). The check-ins will occur at 3, 6, 9, and 12 months since shortly before starting the Self-Compassion Reflection Program. During each scheduled check-in, you will be asked to complete a set of online questionnaires and a phone interview with a researcher (similar to the phone interview at Part 2).
 
-
-
 # Compensation
 
 You will be compensated with electronic gift cards to one of four vendors (Tim Hortons, Starbucks, Cineplex, Chapters, or Esso & Mobil) of your choice for your participation in the study. The compensation are as follows: a $10 gift card for completing the first part and a $10 gift card completing the second part of the study, and then, if eligible, you will receive a $30 gift card for each of the first three check-ins (for a total of $90 in gift cards) and a $40 gift card for the fourth (and final) check-in. You are eligible to receive a total of $150 in gift cards.”
