@@ -7,7 +7,7 @@ backgrounds:
 ---
 # Contact Information
 
-The SCOPE Trial
+SCOPE Trial
 
 University of Regina
 
