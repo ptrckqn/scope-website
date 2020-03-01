@@ -1,7 +1,6 @@
 ---
-title: |
-  # Self Compassion
-subtitle: ""
+title: '# Self-Compassion'
+subtitle: ' '
 backgrounds:
   - src: /images/photo-11.jpg
 ---
