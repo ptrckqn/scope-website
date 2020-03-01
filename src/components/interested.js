@@ -74,7 +74,10 @@ const Interested = ({ setShowApply, image }) => {
     <Container image={image}>
       <Details>
         <Title>Are you interested?</Title>
-        <StyledLink href="https://uregina.eu.qualtrics.com/jfe/form/SV_bK1boAo9VkWkL7T">
+        <StyledLink
+          href="https://uregina.eu.qualtrics.com/jfe/form/SV_bK1boAo9VkWkL7T"
+          target="__blank"
+        >
           Apply Now
         </StyledLink>
         {/* <ApplyBtn onClick={handleClick}>Apply Now</ApplyBtn> */}
