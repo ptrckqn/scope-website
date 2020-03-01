@@ -69,8 +69,8 @@ const ContactPage = ({
           <Form full />
         </Div>
         <MarkdownData dangerouslySetInnerHTML={{ __html: html }} />
-        <Interested image="/images/photo-10.jpg" />
       </Container>
+      <Interested image="/images/photo-10.jpg" />
     </Layout>
   );
 };
