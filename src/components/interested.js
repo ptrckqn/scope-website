@@ -47,6 +47,23 @@ const ApplyBtn = styled.button`
   }
 `;
 
+const StyledLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  transition: all 300ms;
+  &:hover {
+    color: #202020;
+    background-color: #fff;
+    border: 2px solid #202020;
+  }
+`;
+
 const Interested = ({ setShowApply, image }) => {
   const handleClick = e => {
     e.preventDefault();
@@ -57,7 +74,10 @@ const Interested = ({ setShowApply, image }) => {
     <Container image={image}>
       <Details>
         <Title>Are you interested?</Title>
-        <ApplyBtn onClick={handleClick}>Apply Now</ApplyBtn>
+        <StyledLink href="https://uregina.eu.qualtrics.com/jfe/form/SV_bK1boAo9VkWkL7T">
+          Apply Now
+        </StyledLink>
+        {/* <ApplyBtn onClick={handleClick}>Apply Now</ApplyBtn> */}
       </Details>
     </Container>
   );

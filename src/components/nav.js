@@ -229,7 +229,7 @@ const Nav = () => {
           <NavLink to="/depression">Depression</NavLink>
         </LinkContainer>
         <LinkContainer>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </LinkContainer>
       </Links>
     </Container>
