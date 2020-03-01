@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Form from "../components/form";
-import Interested from "../components/interested";
 
 const Container = styled.section`
   background: #fff;
@@ -70,7 +69,6 @@ const ContactPage = ({
         </Div>
         <MarkdownData dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
-      <Interested image="/images/photo-10.jpg" />
     </Layout>
   );
 };

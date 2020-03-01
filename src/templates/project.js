@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Details from "../components/details";
+import Interested from "../components/interested";
 
 const Container = styled.section`
   background: #fff;
@@ -34,6 +35,7 @@ const ProjectPage = ({
       />
       <Container>
         <Details data={html} />
+        <Interested image="/images/photo-10.jpg" />
       </Container>
     </Layout>
   );
