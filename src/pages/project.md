@@ -4,6 +4,7 @@ title: |
 subtitle: ' '
 backgrounds:
   - src: /images/photo-8.png
+  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
 ---
 # SCOPE Trial
 
