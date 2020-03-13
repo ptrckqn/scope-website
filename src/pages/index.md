@@ -7,10 +7,6 @@ mainQuote: >-
   "There is a beauty and a wisdom in casting a compassionate eye on our
   fallibility." - DR. SHADI BESHAI
 backgrounds:
-  - src: /images/photo-5.jpeg
-  - src: /images/photo-4.jpeg
-  - src: /images/photo-9.jpeg
-  - src: /images/photo-3.jpeg
   - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
   - src: images/IMG_0718.jpg
   - src: images/IMG_8663.jpg
