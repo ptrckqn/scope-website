@@ -4,6 +4,7 @@ title: |
 subtitle: ' '
 backgrounds:
   - src: /images/photo-8.png
+  - src: images/IMG_0718.jpg
 ---
 # Contact Information
 
