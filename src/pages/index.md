@@ -22,7 +22,7 @@ squares:
       is composed of four parts that span over a 12-month period, including the
       7-week program. You will be compensated for your participation in this
       meaningful research.
-    image: /images/photo-1.jpeg
+    image: images/photo-9.jpeg
     title: PROJECT
     url: /project
   - body: >
