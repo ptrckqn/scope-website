@@ -11,6 +11,9 @@ backgrounds:
   - src: /images/photo-4.jpeg
   - src: /images/photo-9.jpeg
   - src: /images/photo-3.jpeg
+  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
+  - src: images/IMG_0718.jpg
+  - src: images/IMG_8663.jpg
 squares:
   - body: >
       The main objective of the SCOPE Trial is to examine whether a 7-week
