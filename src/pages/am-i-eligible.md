@@ -1,18 +1,19 @@
 ---
-title: '# Am I Eligible?'
-subtitle: ' '
+title: "# Am I Eligible?"
+subtitle: " "
 backgrounds:
   - src: /images/photo-8.png
-  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
+  - src: images/1.jpg
 ---
+
 # Eligibility
 
 We are looking for individuals who meet the following criteria:
 
-* Canadian residents
-* 18 years of age or older
-* Have experienced depression or symptoms of depression in the past
-* Have access to a phone, computer, and internet
-* Available to work through the program each week for 7 weeks and complete a 12-month follow-up
-* Willing to be contacted by researchers as required throughout the duration of the study
-* Not seeking face-to-face therapy for depression, anxiety, or other mental health condition(s)
+- Canadian residents
+- 18 years of age or older
+- Have experienced depression or symptoms of depression in the past
+- Have access to a phone, computer, and internet
+- Available to work through the program each week for 7 weeks and complete a 12-month follow-up
+- Willing to be contacted by researchers as required throughout the duration of the study
+- Not seeking face-to-face therapy for depression, anxiety, or other mental health condition(s)

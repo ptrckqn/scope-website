@@ -1,11 +1,12 @@
 ---
 title: |
   # SCOPE Trial
-subtitle: ' '
+subtitle: " "
 backgrounds:
   - src: /images/photo-8.png
-  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
+  - src: images/1.jpg
 ---
+
 # SCOPE Trial
 
 <!--\\\\[if gte mso 9]><xml>
@@ -670,7 +671,7 @@ table.MsoNormalTable
 
 <!--StartFragment-->
 
-Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. The SCOPE Trial is composed of four parts that span over a 12-month period, including a 7-week online program that was designed to stave off the progression of depression. By participating in the study, you will receive up to $150 in electronic gift cards. The main objective of the SCOPE Trial is to examine whether the online self-directed Self-Compassion Reflection Program can prevent the re-experience of this illness.
+Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. The SCOPE Trial is composed of four parts that span over a 12-month period, including a 7-week online program that was designed to stave off the progression of depression. By participating in the study, you will receive up to \$150 in electronic gift cards. The main objective of the SCOPE Trial is to examine whether the online self-directed Self-Compassion Reflection Program can prevent the re-experience of this illness.
 
 <!--EndFragment-->
 

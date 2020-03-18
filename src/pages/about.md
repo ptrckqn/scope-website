@@ -1,10 +1,11 @@
 ---
-title: '# The Team'
-subtitle: ' '
+title: "# The Team"
+subtitle: " "
 backgrounds:
   - src: /images/photo-8.png
-  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
+  - src: images/1.jpg
 ---
+
 # Our Team
 
 The SCOPE Trial is led by a team of psychologists, professors, and students at the University of Regina. This is a joint project by the Depression, Cognition, and Culture Lab at the University of Regina and the [Psychology-WISE Lab](http://uregina.ca/~hadjista/) and is funded by the Social Sciences and Humanities Research Council of Canada, the Canadian Institutes of Health Research, and Saskatchewan Health Research Foundation.
