@@ -7,9 +7,9 @@ mainQuote: >-
   "There is a beauty and a wisdom in casting a compassionate eye on our
   fallibility." - DR. SHADI BESHAI
 backgrounds:
-  - src: images/13958001_10157381563530118_6137852533223944017_o (1).jpg
-  - src: images/IMG_0718.jpg
-  - src: images/IMG_8663.jpg
+  - src: /images/1.jpg
+  - src: /images/IMG_0718.jpg
+  - src: /images/IMG_8663.jpg
 squares:
   - body: >
       The main objective of the SCOPE Trial is to examine whether a 7-week
@@ -18,7 +18,7 @@ squares:
       is composed of four parts that span over a 12-month period, including the
       7-week program. You will be compensated for your participation in this
       meaningful research.
-    image: images/photo-9.jpeg
+    image: /images/photo-9.jpeg
     title: PROJECT
     url: /project
   - body: >
@@ -38,19 +38,18 @@ squares:
     title: AM I ELIGIBLE?
     url: /am-i-eligible
 quotes:
-  - author: 'Dr. Tara Brach, PhD'
+  - author: "Dr. Tara Brach, PhD"
     body: Self-compassion is the ground of all emotional healing…
     sub: Author of Radical Acceptance
-  - author: 'Dr. Kristin D. Neff, PhD'
+  - author: "Dr. Kristin D. Neff, PhD"
     body: >-
       Self-compassion honors the fact that all human beings have both strengths
       and weaknesses. It acknowledges the reality that we are imperfect human
       being who experience suffering, and are therefore worthy of compassion.
     sub: Pioneering researcher on self-compassion
-  - author: 'Dr. Christopher K. Germer, PhD'
+  - author: "Dr. Christopher K. Germer, PhD"
     body: >-
       A moment of self-compassion can change your entire day. A string of such
       moments can change the course of your life.
     sub: Co-developer of the Mindful Self-Compassion training program.
 ---
-
