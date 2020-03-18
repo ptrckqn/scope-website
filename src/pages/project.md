@@ -3,7 +3,7 @@ title: |
   # SCOPE Trial
 subtitle: ' '
 backgrounds:
-  - src: /images/1.jpg
+  - src: /images/IMG_8663.jpg
 ---
 
 # SCOPE Trial
