@@ -1,8 +1,7 @@
 ---
-title: "# Am I Eligible?"
-subtitle: " "
+title: '# Am I Eligible?'
+subtitle: ' '
 backgrounds:
-  - src: /images/photo-8.png
   - src: /images/1.jpg
 ---
 
