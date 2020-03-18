@@ -3,7 +3,7 @@ title: |
   # Depression
 subtitle: ' '
 backgrounds:
-  - src: /images/photo-3.jpeg
+  - src: /images/IMG_8663.jpg
 ---
 
 # What is Depression?
