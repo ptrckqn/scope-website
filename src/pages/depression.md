@@ -1,9 +1,8 @@
 ---
 title: |
   # Depression
-subtitle: " "
+subtitle: ' '
 backgrounds:
-  - src: /images/photo-8.png
   - src: /images/IMG_8663.jpg
 ---
 
