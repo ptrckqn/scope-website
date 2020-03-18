@@ -1,5 +1,5 @@
 ---
-title: '# Contact Ushttps://www.scopetrial.ca/admin/#/collections/pages'
+title: '# Contact Us'
 subtitle: ' '
 backgrounds:
   - src: /images/IMG_0718.jpg
