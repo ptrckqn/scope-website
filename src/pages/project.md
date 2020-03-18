@@ -1,9 +1,8 @@
 ---
 title: |
   # SCOPE Trial
-subtitle: " "
+subtitle: ' '
 backgrounds:
-  - src: /images/photo-8.png
   - src: /images/1.jpg
 ---
 
