@@ -1,8 +1,7 @@
 ---
-title: "# The Team"
-subtitle: " "
+title: '# The Team'
+subtitle: ' '
 backgrounds:
-  - src: /images/photo-8.png
   - src: /images/1.jpg
 ---
 
