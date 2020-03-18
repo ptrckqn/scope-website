@@ -2,7 +2,7 @@
 title: '# The Team'
 subtitle: ' '
 backgrounds:
-  - src: /images/1.jpg
+  - src: /images/IMG_8663.jpg
 ---
 
 # Our Team
