@@ -2,7 +2,7 @@
 title: '# Am I Eligible?'
 subtitle: ' '
 backgrounds:
-  - src: /images/IMG_8663.jpg
+  - src: /images/photo-10.jpg
 ---
 
 # Eligibility
