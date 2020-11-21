@@ -5,17 +5,16 @@ subtitle: ' '
 backgrounds:
   - src: /images/photo-10.jpg
 ---
-
 # SCOPE Trial
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
   <o:PixelsPerInch>96</o:PixelsPerInch>
  </o:OfficeDocumentSettings>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -54,9 +53,9 @@ backgrounds:
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 9]><xml>
+<!--\\\\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="380">
@@ -643,9 +642,9 @@ backgrounds:
   <w:LsdException Locked="false" Priority="52"
    Name="List Table 7 Colorful Accent 6"/>
  </w:LatentStyles>
-</xml><!\\\\[endif]-->
+</xml><!\\\\\[endif]-->
 
-<!--\\\\[if gte mso 10]>
+<!--\\\\\[if gte mso 10]>
 <style>
  /* Style Definitions */
 table.MsoNormalTable
@@ -666,11 +665,11 @@ table.MsoNormalTable
 	mso-hansi-font-family:Calibri;
 	mso-hansi-theme-font:minor-latin;}
 </style>
-<!\\\\[endif]-->
+<!\\\\\[endif]-->
 
 <!--StartFragment-->
 
-Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. The SCOPE Trial is composed of four parts that span over a 12-month period, including a 7-week online program that was designed to stave off the progression of depression. By participating in the study, you will receive up to \$150 in electronic gift cards. The main objective of the SCOPE Trial is to examine whether the online self-directed Self-Compassion Reflection Program can prevent the re-experience of this illness.
+Self-compassion is a flourishing concept in Western psychology. Evidence from scientific research shows that self-compassion is associated with positive outcomes, such as reduced depression symptoms, enhanced well-being, and increased resiliency to stress. The SCOPE Trial is composed of four parts that span over a 12-month period, including a 7-week online program that was designed to stave off the progression of depression. By participating in the study, you will receive up to $150 in electronic gift cards. The main objective of the SCOPE Trial is to examine whether the online self-directed Self-Compassion Reflection Program can prevent the re-experience of this illness.
 
 <!--EndFragment-->
 
@@ -701,7 +700,7 @@ The SCOPE Trial is comprised of 4 parts:
 1. We will first ask you to read and complete our consent process, then complete a number of brief online questionnaires (Part 1).
 2. We will also schedule to complete a phone interview (Part 2) with you during which a researcher will ask about your general mood, daily functioning, and mental health status. This interview is brief, and should take no more than 5 to 20 minutes of your time. Based on your responses on the questionnaires and phone interview, we will determine whether or not you are eligible to continue with the study.
 3. If deemed eligible, you will receive access to the 7-week online self-directed Self-Compassion Reflection Program (Part 3). The program is made up of 7 modules, and you will receive one module each week for 7 weeks.
-4. After completing the 7-week program, we will monitor you progress at four different check-ins (Part 4). The check-ins will occur at 3, 6, 9, and 12 months since shortly before starting the Self-Compassion Reflection Program. During each scheduled check-in, you will be asked to complete a set of online questionnaires and a phone interview with a researcher (similar to the phone interview at Part 2).
+4. After completing the 7-week program, we will monitor you progress at four different check-ins (Part 4). The check-ins will occur at approximately 3, 6, 9, and 12 months since starting the Self-Compassion Reflection Program. During each scheduled check-in, you will be asked to complete a set of online questionnaires and a phone interview with a researcher (similar to the phone interview at Part 2).
 
 # <br>
 
