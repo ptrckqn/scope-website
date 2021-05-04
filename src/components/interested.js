@@ -70,6 +70,9 @@ const Interested = ({ setShowApply, image }) => {
 
     setShowApply(true);
   };
+  
+  return null;
+  
   return (
     <Container image={image}>
       <Details>
